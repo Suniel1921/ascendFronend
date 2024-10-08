@@ -206,7 +206,7 @@ const generateInvoice = (doc) => {
 
   // Add company name below the invoice heading
   pdf.setFontSize(14);
-  pdf.text('Nepal Tech Innovations', pdf.internal.pageSize.getWidth() / 2, 30, { align: 'center' });
+  pdf.text('Testing Invoice', pdf.internal.pageSize.getWidth() / 2, 30, { align: 'center' });
 
   pdf.setFontSize(12);
   
