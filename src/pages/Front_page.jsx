@@ -57,7 +57,7 @@ const Front_page = () => {
                 <p>READ ABOUT US</p>
               </span>
             </div>
-            <div id="unique-hover-button__div">
+            <div id="unique-hover-button__div" className="hidethis">
               <span onClick={() => navigate("/About_Ascend")}>
                 <p>READ ABOUT US</p>
               </span>
