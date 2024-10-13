@@ -20,7 +20,7 @@ const By_Laws_operating_Agreements = () => {
           <h3 className='bylaws-right-h3'>Let's Ascend Incoperate</h3>
           <p>Give us a call today to place your order.</p>
           <p>
-            980000000
+            +1(313) 355-3295
           </p>
           {/* <button className="bylaws-button-full">Get Started</button> */}
         </div>

@@ -19,7 +19,7 @@ const DBA_Business_Name = () => {
             <p>Give us a call today to place your order.</p>
             <p>
               <b>
-                980000000
+                +1(313) 355-3295
               </b>
             </p>
           </div>
