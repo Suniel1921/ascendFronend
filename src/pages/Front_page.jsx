@@ -141,7 +141,7 @@ const Front_page = () => {
       <Process_box />
       <Pricing_main />
       <Banner />
-      <Profile />
+      {/* <Profile /> */}
 
       {/* <Banner2/> */}
       <Pricing_box />
