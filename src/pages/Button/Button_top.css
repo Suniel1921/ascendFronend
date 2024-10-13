@@ -31,7 +31,8 @@
 }
 
 .hover-button__div:nth-child(1) {
-    background-color: red;
+    background-color: #007bff;
+    color: #ffffff;
     padding: 0; /* Remove padding */
     margin: 0;  /* Remove margin */
 }
