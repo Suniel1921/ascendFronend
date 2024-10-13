@@ -85,7 +85,7 @@
     width: 30%;
     padding: 10px;
     color: #fff;
-    background-color: #d1344f;
+    background-color: var(--darkBlue);
     border-radius: 5px;
 }
 .video-frame-container {
