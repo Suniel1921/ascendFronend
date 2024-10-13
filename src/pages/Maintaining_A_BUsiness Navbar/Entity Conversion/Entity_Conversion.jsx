@@ -16,7 +16,7 @@ const Entity_Conversion = () => {
 
         </div>
         <div className="Entity_Conversion-right-container">
-          <h3 className='Entity_Conversion-right-h3'>Let's get to it.</h3>
+          <h3 className='Entity_Conversion-right-h3'>Let's Ascend Incoperate</h3>
           <p>Give us a call today to place your order.</p>
           <p>
             980000000

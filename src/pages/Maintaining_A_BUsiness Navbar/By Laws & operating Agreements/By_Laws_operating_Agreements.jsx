@@ -17,7 +17,7 @@ const By_Laws_operating_Agreements = () => {
           
         </div>
         <div className="bylaws-right-container">
-          <h3 className='bylaws-right-h3'>Let's get to it.</h3>
+          <h3 className='bylaws-right-h3'>Let's Ascend Incoperate</h3>
           <p>Give us a call today to place your order.</p>
           <p>
             980000000
