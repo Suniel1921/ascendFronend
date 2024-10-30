@@ -369,19 +369,19 @@ const App = () => {
                 element={<Registered_Agent_Service />}
               />
               <Route
-                path="/Employer_ID_Number"
+                path="/employer-id-number"
                 element={<Employer_ID_Number />}
               />
               <Route
-                path="/Incorporate_In_Welfare"
+                path="/incorporate-in-welfare"
                 element={<Incorporate_In_Welfare />}
               />
               <Route
-                path="/Limited_Liability_Company"
+                path="/limited-liability-company"
                 element={<Limited_Liability_Company />}
               />
-              <Route path="/S_Corporation" element={<S_Corporation />} />
-              <Route path="/C_Corporation" element={<C_Corporation />} />
+              <Route path="/s-corporation" element={<S_Corporation />} />
+              <Route path="/c-corporation" element={<C_Corporation />} />
               <Route
                 path="/None_Profit_Corporation"
                 element={<None_Profit_Corporation />}

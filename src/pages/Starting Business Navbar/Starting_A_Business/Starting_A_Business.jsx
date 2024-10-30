@@ -75,7 +75,7 @@ const Starting_A_Business = () => {
           <Accordion
             title="Employer Identification Number (EIN)"
             content="Corporations, most LLCs, and all businesses with employees must have this IRS-issued identifier. Much like a Social Security Number, an Employer Identification Number (EIN) is a federal nine-digit number that identifies a business entity."
-            link="/Employer_ID_Number"
+            link="/employer-id-number"
             isOpen={openAccordionIndex["exploration"] === 1}
             onClick={() => handleAccordionClick("exploration", 1)}
           />
@@ -119,21 +119,21 @@ const Starting_A_Business = () => {
           <Accordion
             title="Limited Liability Company (LLC)"
             content="An LLC is a great choice for businesses that want the liability protection of a corporation with less paperwork."
-            link="/Limited_Liability_Company"
+            link="/limited-liability-company"
             isOpen={openAccordionIndex["education"] === 0}
             onClick={() => handleAccordionClick("education", 0)}
           />
           <Accordion
             title="C Corporation"
             content="A C Corporation is the most common business entity. An ideal choice for businesses that want to attract investors."
-            link="/C_Corporation"
+            link="/c-corporation"
             isOpen={openAccordionIndex["education"] === 1}
             onClick={() => handleAccordionClick("education", 1)}
           />
           <Accordion
             title="S Corporation"
             content="An S Corporation is a great choice for small businesses that want to avoid double taxation on business profits."
-            link="/S_Corporation"
+            link="/s-corporation"
             isOpen={openAccordionIndex["education"] === 2}
             onClick={() => handleAccordionClick("education", 2)}
           />

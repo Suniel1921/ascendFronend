@@ -24,7 +24,7 @@ const StartUp_Task = () => {
           Steps to Starting a Small Business with Ascend Incorporate LLC.
         </p>
       </div>
-      .
+
       <div className="bottom_startup cst-startup">
         {/*  left middle div */}
         <div className="left_middlediv">

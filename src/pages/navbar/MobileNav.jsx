@@ -61,7 +61,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/Employer_ID_Number"
+            to="/employer-id-number"
             onClick={toggleDrawer(false)}
           >
             Employer ID Number
@@ -69,7 +69,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/Incorporate_In_Welfare"
+            to="/incorporate-in-welfare"
             onClick={toggleDrawer(false)}
           >
             Incorporate In Welfare
@@ -77,7 +77,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/Limited_Liability_Company"
+            to="/limited-liability-company"
             onClick={toggleDrawer(false)}
           >
             Limited Liability Company
@@ -85,7 +85,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/S_Corporation"
+            to="/s-corporation"
             onClick={toggleDrawer(false)}
           >
             S Corporation
@@ -93,7 +93,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/C_Corporation"
+            to="/c-corporation"
             onClick={toggleDrawer(false)}
           >
             C Corporation

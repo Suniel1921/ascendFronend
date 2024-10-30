@@ -1,6 +1,10 @@
 /* .main_registerd Service_container{
     width:70%;
 } */
+
+.main_registerd {
+  line-height: 1.5;
+}
 .main_registered_heading {
   text-align: center;
   color: var(--deepBlue);
@@ -10,12 +14,16 @@
 }
 .bottom_register_container {
   display: flex;
-  width: 80%;
+  width: 70%;
   gap: 2.5rem;
   margin: 50px auto;
 }
 .left_register_container {
   width: 75%;
+}
+
+.custom-tab-content li {
+  margin-left: 2%;
 }
 .right_register_container {
   width: 20%;

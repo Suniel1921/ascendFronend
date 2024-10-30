@@ -31,7 +31,7 @@ const Pricing_box = () => {
             communicating with a corporation or LLC.
           </p>
         </Link>
-        <Link to="/Employer_ID_Number" className="Features-card">
+        <Link to="/employer-id-number" className="Features-card">
           <div className="Featured_card_top">
             <div className="featureCardHeading">
               <h3>Employer ID Number</h3>
@@ -46,7 +46,7 @@ const Pricing_box = () => {
             to drive actions and business growth.
           </p>
         </Link>
-        <Link to="/Incorporate_In_Welfare" className="Features-card">
+        <Link to="/incorporate-in-welfare" className="Features-card">
           <div className="Featured_card_top">
             <div className="featureCardHeading">
               <h3>Incorporate In Welfare</h3>
@@ -61,7 +61,7 @@ const Pricing_box = () => {
             to engage and act.
           </p>
         </Link>
-        <Link to="/Limited_Liability_Company" className="Features-card">
+        <Link to="/limited-liability-company" className="Features-card">
           <div className="Featured_card_top">
             <div className="featureCardHeading">
               <h3>Limited Liability Company</h3>
@@ -76,7 +76,7 @@ const Pricing_box = () => {
             engagement and effectiveness.
           </p>
         </Link>
-        <Link to="/S_Corporation" className="Features-card">
+        <Link to="/s-corporation" className="Features-card">
           <div className="Featured_card_top">
             <div className="featureCardHeading">
               <h3>S Corporation</h3>
@@ -91,7 +91,7 @@ const Pricing_box = () => {
             and growth.
           </p>
         </Link>
-        <Link to="/C_Corporation" className="Features-card">
+        <Link to="/c-corporation" className="Features-card">
           <div className="Featured_card_top">
             <div className="featureCardHeading">
               <h3>C Corporation</h3>

@@ -175,30 +175,30 @@ const Navbar = () => {
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading4">
-        <NavLink className="dropdownLink_heading" to="/Employer_ID_Number">
+        <NavLink className="dropdownLink_heading" to="/employer-id-number">
           Employer ID Number
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading5">
-        <NavLink className="dropdownLink_heading" to="/Incorporate_In_Welfare">
+        <NavLink className="dropdownLink_heading" to="/incorporate-in-welfare">
           Incorporate In Welfare
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading6">
         <NavLink
           className="dropdownLink_heading"
-          to="/Limited_Liability_Company"
+          to="/limited-liability-company"
         >
           Limited Liability Company
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading7">
-        <NavLink className="dropdownLink_heading" to="/S_Corporation">
+        <NavLink className="dropdownLink_heading" to="/s-corporation">
           S Corporation
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading8">
-        <NavLink className="dropdownLink_heading" to="/C_Corporation">
+        <NavLink className="dropdownLink_heading" to="/c-corporation">
           C Corporation
         </NavLink>
       </Menu.Item>

@@ -149,7 +149,7 @@ const MaintainingABusiness = () => {
           <Accordion
             title="Employer Identification Number (EIN)"
             content="Much like a Social Security Number, an Employer Identification Number (EIN) is a federal nine-digit number that identifies a business entity. Ascend can obtain an EIN from the IRS on your business's behalf. The process is fast, easy and cost-effective."
-            link="/Employer_ID_Number"
+            link="/employer-id-number"
             isOpen={openAccordionIndex["irs_filings"] === 0}
             onClick={() => handleAccordionClick("irs_filings", 0)}
           />
