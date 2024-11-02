@@ -148,6 +148,7 @@ import Washington from './pages/Learning Center Navbar/State Guides/By State/Was
 import West_Virginia from './pages/Learning Center Navbar/State Guides/By State/West Virginia/West_Virginia';
 import Wisconsin from './pages/Learning Center Navbar/State Guides/By State/Wisconsin/Wisconsin';
 import Wyoming from './pages/Learning Center Navbar/State Guides/By State/Wyoming/Wyoming';
+import UserNewOrder from './components/admin/dashboardMainContent/userDetails/UserNewOrder';
 
 
 
@@ -315,6 +316,7 @@ const App = () => {
                 <Route path='admin/manage-orders' element={<ManageOrders />} />
                 <Route path='admin/user-details' element={<UserDetails/>} />
                 <Route path='admin/user-documents' element={<UserDocuments/>} />
+                <Route path='admin/userNewOrder' element={<UserNewOrder/>} />
               </Route>
 
             </Route>
