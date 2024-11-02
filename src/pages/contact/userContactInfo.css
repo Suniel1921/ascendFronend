@@ -9,16 +9,17 @@
   /* justify-content: space-around; */
 
   gap: 2rem; /* Gap between flex items */
-  margin: 4% auto;
+  margin-top: 34px;
 }
 
-.userContactInfoContainer {
+.userContactInfoContainer{
   width: 60%;
 }
 
-.cartContainer {
+.cartContainer{
   width: 40%;
 }
+
 
 /* */
 
@@ -58,38 +59,14 @@
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
   .flexContainer {
-    margin: 13% 0 4% 0;
-    display: block; /* Stack items vertically */
+    flex-direction: column; /* Stack items vertically */
   }
 
-  .userContactInfoContainer,
-  .cartContainer {
-    width: 100%;
-  }
-
-  .cartCardContainer {
-    padding: 3% 3%;
-  }
   .contactForm {
     grid-template-columns: 1fr; /* Single column on small screens */
   }
 
   .cartContainer {
-    width: 100%;
     margin-top: 20px; /* Space between form and cart */
-  }
-}
-
-@media (max-width: 650px) {
-  .flexContainer {
-    margin: 27% 0 4% 0;
-  }
-
-  .contactForm {
-    gap: 1rem;
-  }
-
-  .cartCard li {
-    margin-left: 0.5rem;
   }
 }

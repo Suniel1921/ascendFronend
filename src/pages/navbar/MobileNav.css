@@ -1,10 +1,11 @@
 .menu-icon {
-  color: #006998;
-  font-size: 22px;
+    color: white;
+    font-size: 22px;
 }
 /* Hide .menu-icon on desktop */
 @media screen and (min-width: 768px) {
-  .menu-icon {
-    display: none;
+    .menu-icon {
+      display: none;
+    }
   }
-}
+  

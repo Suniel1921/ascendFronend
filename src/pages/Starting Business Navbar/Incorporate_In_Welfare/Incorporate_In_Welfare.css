@@ -1,8 +1,5 @@
-.main_delware_container {
-  line-height: 1.5;
-}
 .top_main_hero_section_Delaware {
-  height: 200px;
+  height: 185px;
   width: 100%;
   overflow: hidden;
   position: relative; /* Positioning the container relative to allow absolute positioning of the text */
@@ -18,19 +15,15 @@
 .image_over_paragraph_Delware {
   position: absolute; /* Positioning the text absolutely within the container */
   color: #003b5c;
-  top: 60%;
-  transform: translateY(-60%);
+  top: 6vh;
   width: 40%;
   text-align: left; /* Centering the text horizontally */
   margin: 0 auto 0 17%; /* Ensuring the text block is centered */
   padding: 10px;
-  font-size: 30px; /* Adjust font size as needed */
+  font-size: 36px; /* Adjust font size as needed */
   font-weight: 500;
 }
 
-.card_delware-column li a {
-  color: var(--deepBlue);
-}
 .right_delware_bottom {
   width: 25%;
   padding: 10px 20px 20px 20px;
@@ -41,15 +34,11 @@
   text-align: center;
 }
 .right_delware_bottomt h3 {
-  font-size: 22px;
+  font-size: 32px;
   color: var(--darkBlue);
   margin: 20px auto 10px auto;
   width: 80%;
   line-height: 40px;
-}
-
-.card_delware-info-section h3 {
-  color: var(--deepBlue);
 }
 
 .right_delware_bottom p {
@@ -67,7 +56,7 @@
 
 .bottom_main_container_delware {
   width: 65%;
-  margin: 4% auto;
+  margin: 50px auto;
 }
 .top_main_bottom_delware {
   display: flex;
@@ -85,14 +74,7 @@
 }
 .delware_h2 {
   margin-top: 20px;
-  font-size: 18px;
-  color: var(--deepBlue);
-}
-
-@media (max-width: 1024px) {
-  .bottom_main_container_delware {
-    width: 90%;
-  }
+  font-size: 26px;
 }
 
 @media (max-width: 900px) {
@@ -112,19 +94,6 @@
   }
   .bottom_main_container_delware {
     width: 90%;
-  }
-
-  .card_delware-column {
-    width: 100% !important;
-  }
-}
-
-@media (max-width: 650px) {
-  .delware_h2 {
-    font-size: 16px;
-  }
-
-  .card_delware-info-section li {
-    margin-left: 0;
+    margin: 50px auto;
   }
 }
