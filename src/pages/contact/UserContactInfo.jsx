@@ -41,7 +41,7 @@ const UserContactInfo = () => {
     }),
     onSubmit: async (values, { resetForm }) => {
       try {
-        const response = await axios.post(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/contact/contacts`, values);
+        const response = await axios.post(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/contact/userContactInfo`, values);
         if (response.data.success) {
           localStorage.setItem('contactFormData', JSON.stringify(values));
           toast.success('Contact saved successfully');
