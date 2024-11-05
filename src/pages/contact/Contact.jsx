@@ -288,7 +288,7 @@
 
 
 
-//new code testing
+//new code testing (new order page)
 
 
 import React, { useState } from "react";
@@ -365,6 +365,7 @@ const Contact = () => {
           }
         );
         formik.resetForm();
+        // toast.success('Thanks for your Order we will contact you soon..')
         navigate('/')
         formik.setStatus({ success: response.data.message });
         setCaptchaValue(generateCaptcha()); // Regenerate CAPTCHA on successful submission
