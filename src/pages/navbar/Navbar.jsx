@@ -213,7 +213,7 @@ const Navbar = () => {
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading11">
-        <NavLink className="dropdownLink_heading" to="/Starting_A_Business">
+        <NavLink className="dropdownLink_heading" to="/starting-a-business">
           More
         </NavLink>
       </Menu.Item>
@@ -225,53 +225,53 @@ const Navbar = () => {
       <Menu.Item key="heading1">
         <NavLink
           className="dropdownLink_heading"
-          to="/By_Laws_operating_Agreements"
+          to="/by-laws-operating-agreements"
         >
           By Laws & operating Agreements
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading2">
-        <NavLink className="dropdownLink_heading" to="/Business_Lisences">
+        <NavLink className="dropdownLink_heading" to="/business-licenses">
           Business Licenses
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading3">
-        <NavLink className="dropdownLink_heading" to="/Annual_report">
+        <NavLink className="dropdownLink_heading" to="/annual-report">
           Annual Report
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading4">
         <NavLink
           className="dropdownLink_heading"
-          to="/Certificate_of_Good_Standing"
+          to="/certificate-of-good-standing"
         >
           Certificate of Good Standing
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading5">
-        <NavLink className="dropdownLink_heading" to="/Scrop_Election">
+        <NavLink className="dropdownLink_heading" to="/scrop-election">
           Scrop Election (From 2553)
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading6">
-        <NavLink className="dropdownLink_heading" to="/LLC_Tax_Status_Election">
+        <NavLink className="dropdownLink_heading" to="/llc-tax-status-election">
           LLC Tax Status Election (form 8832)
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading7">
-        <NavLink className="dropdownLink_heading" to="/NonProfit_501_Status">
+        <NavLink className="dropdownLink_heading" to="/nonprofit-501-status">
           NonProfit 501 (C) Status
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading8">
-        <NavLink className="dropdownLink_heading" to="/DBA_Business_Name">
+        <NavLink className="dropdownLink_heading" to="/dba-business-name">
           DBA/Business Name
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading9">
         <NavLink
           className="dropdownLink_heading"
-          to="/Register_in_Additional_States"
+          to="/register-in-additional-states"
         >
           Register in Additional States
         </NavLink>
@@ -282,7 +282,7 @@ const Navbar = () => {
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading11">
-        <NavLink className="dropdownLink_heading" to="/Maintaining_a_Business">
+        <NavLink className="dropdownLink_heading" to="/maintaining-a-business">
           More
         </NavLink>
       </Menu.Item>
@@ -316,23 +316,23 @@ const Navbar = () => {
       <Menu.Item key="heading5">
         <NavLink
           className="dropdownLink_heading"
-          to="/Industry_specific_information"
+          to="/industry-specific-information"
         >
           Industry Specific Information
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading6">
-        <NavLink className="dropdownLink_heading" to="/Tax_filings">
+        <NavLink className="dropdownLink_heading" to="/tax-filings">
           Tax filings
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading7">
-        <NavLink className="dropdownLink_heading" to="/State_guides">
+        <NavLink className="dropdownLink_heading" to="/state-guides">
           State Guides
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading8">
-        <NavLink className="dropdownLink_heading" to="/Learningcenter">
+        <NavLink className="dropdownLink_heading" to="/learning-center">
           More
         </NavLink>
       </Menu.Item>

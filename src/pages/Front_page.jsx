@@ -85,7 +85,7 @@ const Front_page = () => {
 
         <div
           className="single-service-box"
-          onClick={() => navigate("/State_guides")}
+          onClick={() => navigate("/state-guides")}
         >
           <RoomIcon className="single-icon" />
 

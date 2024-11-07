@@ -1,85 +1,132 @@
 .annual-report-heading {
-    text-align: center;
-    color: #3c3c3c;
-    font-size: 36px;
-    font-weight: 500;
-    width: 60%;
-    margin: 70px auto;
+  text-align: center;
+  color: var(--deepBlue);
+  font-size: 28px;
+  font-weight: 500;
+  width: 60%;
+  margin: 5% auto 2% auto;
+}
+
+.annual-report-bottom-container h2 {
+  color: var(--deepBlue);
+}
+
+.annual-report-container {
+  line-height: 1.5;
+}
+
+.video-frame-container {
+  margin: 4% 0;
+}
+.annual-report-left-container h2 {
+  color: var(--deepBlue);
+}
+
+.tabs-annual-report-tab-content li {
+  margin-left: 0;
 }
 
 .annual-report-bottom-container {
-    display: flex;
-    width: 70%;
-    gap: 2rem;
-    justify-items: justified;
-    margin: 50px auto;
+  display: flex;
+  width: 70%;
+  gap: 2rem;
+  justify-items: justified;
+  margin: 3% auto;
 }
 
 .annual-report-left-container {
-    width: 75%;
+  width: 75%;
 }
 
 .annual-report-right-container {
-    width: 20%;
-    padding: 10px 20px 0px 20px;
-    margin: 0 10px;
-    border-radius: 8px;
-    height: 230px;
-    border: 4px solid #003b5c;
-    text-align: center;
+  width: 20%;
+  padding: 10px 20px 0px 20px;
+  margin: 0 10px;
+  border-radius: 8px;
+  height: 230px;
+  border: 4px solid #003b5c;
+  text-align: center;
 }
 
 .annual-report-button-full {
-    width: 100%;
-    padding: 10px;
-    color: #fff;
-    background-color: var(--darkBlue);
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  background-color: var(--darkBlue);
+  border-radius: 5px;
 }
 
 .annual-report-right-h3 {
-    font-size: 30px;
-    color: var(--darkBlue);
-    margin: 20px auto 30px auto;
-    width: 70%;
-    line-height: 30px;
+  font-size: 30px;
+  color: var(--darkBlue);
+  margin: 20px auto 30px auto;
+  width: 70%;
+  line-height: 30px;
 }
 
 .annual-report-right-container p {
-    font-size: 18px;
-    margin: 0 0 5px 0;
+  font-size: 18px;
+  margin: 0 0 5px 0;
 }
 
-@media(max-width: 768px) {
-    .annual-report-bottom-container {
-        display: block;
-        width: 90%;
-        gap: 0rem;
-        justify-items: justified;
-        margin: 50px auto;
-    }
-    .annual-report-left-container {
-        width: 100%;
-    }
-    .annual-report-right-container {
-        width: 100%;
-        padding: 10px 20px 30px 0px;
-        margin: 0 10px 0 0;
-        border: none;
-        text-align: left;
-    }
-    .annual-report-button-full {
-        width: 30%;
-    }
-    .annual-report-right-h3 {
-        width: 100%;
-    }
-    .annual-report-heading {
-        text-align: left;
-        color: #3c3c3c;
-        font-size: 36px;
-        font-weight: 500;
-        width: 90%;
-        margin: 70px 0;
-    }
+@media (max-width: 1024px) {
+  .annual-report-heading {
+    margin-top: 8%;
+  }
+  .annual-report-bottom-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .annual-report-bottom-container {
+    display: block;
+    gap: 0rem;
+    justify-items: justified;
+    margin: 2% auto;
+  }
+  .annual-report-left-container {
+    width: 100%;
+  }
+  .annual-report-right-container {
+    width: 100%;
+    padding: 10px 20px 30px 0px;
+    margin: 0 10px 0 0;
+    border: none;
+    text-align: left;
+  }
+  .annual-report-button-full {
+    width: 30%;
+  }
+  .annual-report-right-h3 {
+    width: 100%;
+  }
+  .annual-report-heading {
+    color: #3c3c3c;
+    font-size: 22px;
+    font-weight: 500;
+    width: 100%;
+    margin: 12% 0 4% 0;
+  }
+
+  .annual-report-bottom-container h2 {
+    font-size: 18px;
+  }
+
+  .annual-report-container {
+    margin-bottom: 4%;
+  }
+}
+
+@media (max-width: 650px) {
+  .annual-report-heading {
+    margin: 22% 0 2% 0;
+  }
+
+  .annual-report-container {
+    margin-bottom: 6%;
+  }
+  .annual-report-left-container .tabs-annual-report-tab-content ul {
+    margin-left: 5%;
+  }
 }

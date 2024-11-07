@@ -1,5 +1,5 @@
 .top_main_hero_section_learning_center {
-  height: 185px;
+  height: 200px;
   width: 100%;
   overflow: hidden;
   position: relative; /* Positioning the container relative to allow absolute positioning of the text */
@@ -15,12 +15,13 @@
 .image_over_paragraph_learning_center {
   position: absolute; /* Positioning the text absolutely within the container */
   color: #003b5c;
-  top: 6vh;
+  top: 60%;
+  transform: translateY(-60%);
   width: 40%;
   text-align: left; /* Centering the text horizontally */
   margin: 0 auto 0 17%; /* Ensuring the text block is centered */
   padding: 10px;
-  font-size: 36px; /* Adjust font size as needed */
+  font-size: 28px; /* Adjust font size as needed */
   font-weight: 500;
 }
 
@@ -97,15 +98,37 @@
   margin-top: 50px;
   color: #555;
 }
+
+@media (max-width: 1024px) {
+  .bottom_Learning-center {
+    width: 90%;
+  }
+}
 @media (max-width: 768px) {
   .bottom_Learning-center {
     width: 90%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 2%;
   }
   .arrow-button {
     padding-left: 12%;
     margin-left: -8%;
     text-align: left;
+  }
+
+  .image_over_paragraph_learning_center {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .image_over_paragraph_learning_center {
+    font-size: 22px;
+  }
+
+  .bottom_Learning-center {
+    margin-top: 0%;
   }
 }

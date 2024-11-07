@@ -15,18 +15,11 @@
   margin-right: 8px; /* Space between the dot and text */
 }
 
-.about{
+.about {
   font-size: 12px;
   color: #2a2a2a; /* Darker text color for contrast */
   margin: 0;
 }
-
-
-
-
-
-
-
 
 .about_main {
   display: flex;
@@ -53,8 +46,8 @@
   height: 100%;
   object-fit: cover;
 }
-.about_main_right{
-  width:50%;
+.about_main_right {
+  width: 50%;
 }
 
 .About_us {
@@ -68,7 +61,7 @@
 
 .right_h2 {
   font-size: 2.2rem;
-  color: #14133B;
+  color: #14133b;
   margin-top: 12px;
   font-weight: 700;
 }
@@ -79,7 +72,6 @@
   line-height: 1.5rem;
   color: #728398;
 }
-
 
 .accordion {
   margin: 10px 0;
@@ -103,10 +95,6 @@
   transition: transform 0.3s;
 }
 
-.accordion-icon.open {
-  transform: rotate(45deg);
-}
-
 .accordion-content {
   padding: 10px;
 }
@@ -119,7 +107,7 @@
   text-decoration: underline; /* Add underline on hover */
 }
 
-@media(max-width:768px){
+@media (max-width: 768px) {
   .about_main {
     display: block;
     width: 90%;
@@ -130,27 +118,23 @@
   .collage-container {
     width: 100%;
     /* flex-direction: column; */
-    height:60%;
-   
+    height: 60%;
   }
-  .about_main_right{
-    width:100%;
+  .about_main_right {
+    width: 100%;
   }
   .right_h2 {
     font-size: 1.5rem;
-    line-height:30px;
-
+    line-height: 30px;
   }
   .right_p {
-  padding: 0px 0;
-  font-size: 1.1rem;
-  line-height: 1.5rem;
+    padding: 0px 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
 }
-}
 
-
-
-@media (min-width:768px)  and (max-width:1100px){
+@media (min-width: 768px) and (max-width: 1100px) {
   .about_main {
     display: block;
     width: 90%;
@@ -161,45 +145,44 @@
   .collage-container {
     width: 100%;
     /* flex-direction: column; */
-    height:60%;
+    height: 60%;
     align-items: center;
     justify-content: center;
   }
-  .about_main_right{
-    width:100%;
+  .about_main_right {
+    width: 100%;
   }
   .right_h2 {
     font-size: 2rem;
-    line-height:30px;
+    line-height: 30px;
   }
   .right_p {
-    padding:  0;
+    padding: 0;
   }
 }
-@media  (min-width:480px) and (max-width: 768px){
+@media (min-width: 480px) and (max-width: 768px) {
   .about_main {
     display: block;
     width: 90%;
     margin: 80px auto 50px auto;
   }
   .collage-container {
-    width: 100%;  
+    width: 100%;
   }
   .image-wrapper {
     width: 100%;
     height: 100%;
     /* margin-bottom: 10px; */
   }
-  .about_main_right{
-    width:100%;
+  .about_main_right {
+    width: 100%;
   }
   .right_h2 {
     font-size: 2rem;
   }
   .right_p {
-  padding: 20px 0;
-  font-size: 1.1rem;
-  line-height: 1.5rem;
-}
-  
+    padding: 20px 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
 }

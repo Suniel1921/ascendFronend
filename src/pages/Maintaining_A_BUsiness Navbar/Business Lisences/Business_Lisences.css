@@ -1,85 +1,124 @@
 .business-licenses-heading {
-    text-align: center;
-    color: #3c3c3c;
-    font-size: 36px;
-    font-weight: 500;
-    width: 60%;
-    margin: 70px auto;
+  text-align: center;
+  color: var(--deepBlue);
+  font-size: 28px;
+  font-weight: 500;
+  width: 60%;
+  margin: 6% auto 1% auto;
 }
 
+.business-licenses-container {
+  line-height: 1.5;
+}
+
+.tabs-business-license-tab-content h2 {
+  color: var(--deepBlue);
+}
+
+.tabs-business-license-tab-content li {
+  margin-left: 0%;
+}
 .business-licenses-bottom-container {
-    display: flex;
-    width: 70%;
-    gap: 2rem;
-    justify-items: justified;
-    margin: 50px auto;
+  display: flex;
+  width: 70%;
+  gap: 2rem;
+  justify-items: justified;
+  margin: 2% auto;
 }
 
 .business-licenses-left-container {
-    width: 75%;
+  width: 75%;
 }
 
 .business-licenses-right-container {
-    width: 20%;
-    padding: 10px 20px 0px 20px;
-    margin: 0 10px;
-    border-radius: 8px;
-    height: 230px;
-    border: 4px solid #003b5c;
-    text-align: center;
+  width: 20%;
+  padding: 10px 20px 0px 20px;
+  margin: 0 10px;
+  border-radius: 8px;
+  height: 230px;
+  border: 4px solid #003b5c;
+  text-align: center;
 }
 
 .business-licenses-button-full {
-    width: 100%;
-    padding: 10px;
-    color: #fff;
-    background-color: var(--darkBlue);
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  background-color: var(--darkBlue);
+  border-radius: 5px;
 }
 
 .business-licenses-right-h3 {
-    font-size: 30px;
-    color: var(--darkBlue);
-    margin: 20px auto 30px auto;
-    width: 70%;
-    line-height: 30px;
+  font-size: 30px;
+  color: var(--darkBlue);
+  margin: 20px auto 30px auto;
+  width: 70%;
+  line-height: 30px;
 }
 
 .business-licenses-right-container p {
-    font-size: 18px;
-    margin: 0 0 5px 0;
+  font-size: 18px;
+  margin: 0 0 5px 0;
 }
 
-@media(max-width: 768px) {
-    .business-licenses-bottom-container {
-        display: block;
-        width: 90%;
-        gap: 0rem;
-        justify-items: justified;
-        margin: 50px auto;
-    }
-    .business-licenses-left-container {
-        width: 100%;
-    }
-    .business-licenses-right-container {
-        width: 100%;
-        padding: 10px 20px 30px 0px;
-        margin: 0 10px 0 0;
-        border: none;
-        text-align: left;
-    }
-    .business-licenses-button-full {
-        width: 30%;
-    }
-    .business-licenses-right-h3 {
-        width: 100%;
-    }
-    .business-licenses-heading {
-        text-align: left;
-        color: #3c3c3c;
-        font-size: 36px;
-        font-weight: 500;
-        width: 90%;
-        margin: 70px 0;
-    }
+@media (max-width: 1024px) {
+  .business-licenses-bottom-container {
+    width: 90%;
+  }
+
+  .business-licenses-container {
+    margin-bottom: 4%;
+  }
+}
+
+@media (max-width: 768px) {
+  .business-licenses-bottom-container {
+    display: block;
+    width: 90%;
+    gap: 0rem;
+    justify-items: justified;
+    margin: 50px auto;
+  }
+  .business-licenses-left-container {
+    width: 100%;
+  }
+  .business-licenses-right-container {
+    width: 100%;
+    padding: 10px 20px 30px 0px;
+    margin: 0 10px 0 0;
+    border: none;
+    text-align: left;
+  }
+  .business-licenses-button-full {
+    width: 30%;
+  }
+  .business-licenses-right-h3 {
+    width: 100%;
+  }
+  .business-licenses-heading {
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+    margin: 12% 0 1% 0;
+  }
+  .business-licenses-bottom-container {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .business-licenses-left-container .tabs-business-license-tab-content ul {
+    margin-left: 5%;
+  }
+  .business-licenses-heading {
+    margin: 22% 0 5% 0;
+    font-size: 22px;
+  }
+
+  .business-licenses-left-container .tabs-business-license-tab-content h2 {
+    font-size: 18px;
+  }
+  .business-licenses-container {
+    margin: 5% 0 7% 0;
+  }
 }

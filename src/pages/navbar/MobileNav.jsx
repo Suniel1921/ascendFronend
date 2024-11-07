@@ -117,7 +117,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/Starting_A_Business"
+            to="/starting-a-business"
             onClick={toggleDrawer(false)}
           >
             More
@@ -136,7 +136,7 @@ export default function TemporaryDrawer() {
         <AccordionDetails>
           <NavLink
             className="dropdownLink_heading"
-            to="/By_Laws_operating_Agreements"
+            to="/by-laws-operating-agreements"
             onClick={toggleDrawer(false)}
           >
             By Laws & operating Agreements
@@ -144,7 +144,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/Business_Lisences"
+            to="/business-licenses"
             onClick={toggleDrawer(false)}
           >
             Business Licenses
@@ -152,7 +152,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/Annual_report"
+            to="/annual-report"
             onClick={toggleDrawer(false)}
           >
             Annual Report
@@ -160,7 +160,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/Certificate_of_Good_Standing"
+            to="/certificate-of-good-standing"
             onClick={toggleDrawer(false)}
           >
             Certificate of Good Standing
@@ -168,7 +168,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/Scrop_Election"
+            to="/scrop-election"
             onClick={toggleDrawer(false)}
           >
             Scrop Election (From 2553)
@@ -176,7 +176,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/LLC_Tax_Status_Election"
+            to="/llc-tax-status-election"
             onClick={toggleDrawer(false)}
           >
             LLC Tax Status Election (form 8832)
@@ -184,7 +184,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/NonProfit_501_Status"
+            to="/nonprofit-501-status"
             onClick={toggleDrawer(false)}
           >
             NonProfit 501 (C) Status
@@ -192,7 +192,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/DBA_Business_Name"
+            to="/dba-business-name"
             onClick={toggleDrawer(false)}
           >
             DBA/Business Name
@@ -200,7 +200,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/Register_in_Additional_States"
+            to="/register-in-additional-states"
             onClick={toggleDrawer(false)}
           >
             Register in Additional States
@@ -216,7 +216,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/Maintaining_a_Business"
+            to="/maintaining-a-business"
             onClick={toggleDrawer(false)}
           >
             More
@@ -267,7 +267,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/Industry_specific_information"
+            to="/industry-specific-information"
             onClick={toggleDrawer(false)}
           >
             Industry Specific Information
@@ -275,7 +275,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/Tax_filings"
+            to="/tax-filings"
             onClick={toggleDrawer(false)}
           >
             Tax filings
@@ -283,7 +283,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/State_guides"
+            to="/state-guides"
             onClick={toggleDrawer(false)}
           >
             State Guides
@@ -291,7 +291,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/Learningcenter"
+            to="/learning-center"
             onClick={toggleDrawer(false)}
           >
             More

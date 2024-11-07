@@ -43,7 +43,7 @@ const Starting_A_Business = () => {
     <div className="Starting_A_Business_main_container">
       <div className="top_main_hero_section_starting_a_business">
         <img
-          src="/img/hero-image-open-sign-chair (1).jpg"
+          src="/img/business-bg.jpg"
           alt=""
           className="top_starting_a_business"
         />
@@ -82,7 +82,7 @@ const Starting_A_Business = () => {
           <Accordion
             title="Business Licenses & Permits"
             content="Most state, county, and local governments require companies to have the right licenses and permits in place before they open their doors."
-            link="/Business_Lisences"
+            link="/business-licenses"
             isOpen={openAccordionIndex["exploration"] === 2}
             onClick={() => handleAccordionClick("exploration", 2)}
           />
@@ -96,7 +96,7 @@ const Starting_A_Business = () => {
           <Accordion
             title="Register a Business Name"
             content="Many state and local governments require companies to register any alternate names under which they conduct business."
-            link="/DBA_Business_Name"
+            link="/dba-business-name"
             isOpen={openAccordionIndex["exploration"] === 4}
             onClick={() => handleAccordionClick("exploration", 4)}
           />

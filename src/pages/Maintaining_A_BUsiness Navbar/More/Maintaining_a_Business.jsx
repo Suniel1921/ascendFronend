@@ -43,7 +43,7 @@ const MaintainingABusiness = () => {
     <div className="MaintainingABusiness_main_container">
       <div className="top_main_hero_section_maintaining_business">
         <img
-          src="/img/hero-image-collaborate.jpg"
+          src="/img//s-cop.jpeg"
           alt=""
           className="top_maintaining_business"
         />
@@ -71,7 +71,7 @@ const MaintainingABusiness = () => {
           <Accordion
             title="Annual Reports"
             content="Depending on the state in which you formed your corporation or LLC, you may need to file an annual report. And it's not something to overlook–your company's good standing depends on it. Let Ascend manage your annual report. We'll not only save you time, but also ensure you meet your state's requirements to avoid errors and costly fees."
-            link="/Annual_report"
+            link="/annual-report"
             isOpen={openAccordionIndex["compliance"] === 0}
             onClick={() => handleAccordionClick("compliance", 0)}
           />
@@ -85,7 +85,7 @@ const MaintainingABusiness = () => {
           <Accordion
             title="Bylaws & Operating Agreements"
             content="All corporations must create corporate bylaws outlining the organization and day-to-day operations. And limited liability companies (LLCs) in many states are required to create an operating agreement, which provides a framework for business operations. No matter where your company is located, Ascend can help you create a document tailored to your specific needs."
-            link="/By_Laws_operating_Agreements"
+            link="/by-laws-operating-agreements"
             isOpen={openAccordionIndex["compliance"] === 2}
             onClick={() => handleAccordionClick("compliance", 2)}
           />
@@ -113,7 +113,7 @@ const MaintainingABusiness = () => {
           <Accordion
             title="Certificate of Good Standing"
             content="A Certificate of Good Standing is a state-issued document that shows your corporation or limited liability company (LLC) is authorized to do business in that state. Ascend can order Certificates of Good Standing from the Secretary of State in all 50 states and the District of Columbia. By obtaining a Certificate of Good Standing, you can be sure your business has satisfied its annual report, franchise tax, and other obligations."
-            link="/Certificate_of_Good_Standing"
+            link="/certificate-of-good-standing"
             isOpen={openAccordionIndex["compliance"] === 6}
             onClick={() => handleAccordionClick("compliance", 6)}
           />
@@ -156,21 +156,21 @@ const MaintainingABusiness = () => {
           <Accordion
             title="S Corporation Election – Form 2553"
             content="Filing for S Corporation status may provide tax benefits to your business. Ascend offers services that provide you with tax consultation, assistance in completing the proper forms, and answers to your tax-related questions."
-            link="/Scrop_Election"
+            link="/scrop-election"
             isOpen={openAccordionIndex["irs_filings"] === 1}
             onClick={() => handleAccordionClick("irs_filings", 1)}
           />
           <Accordion
             title="Nonprofit 501(C) Status"
             content="Our customers typically seek 501(c) tax-exempt status with the Internal Revenue Service (IRS) when they form a nonprofit corporation. Not sure how to get started? We can help."
-            link="/NonProfit_501_Status"
+            link="/nonprofit-501-status"
             isOpen={openAccordionIndex["irs_filings"] === 2}
             onClick={() => handleAccordionClick("irs_filings", 2)}
           />
           <Accordion
             title="LLC Tax Status Election (Form 8832)"
             content="It's important to have the best available tax classification for your LLC in order to maximize your tax savings. By filing Form 8832 with the IRS, you can choose a tax status for your entity besides the default status that was automatically assigned. Ascend can help walk you through the process."
-            link="/LLC_Tax_Status_Election"
+            link="/llc-tax-status-election"
             isOpen={openAccordionIndex["irs_filings"] === 3}
             onClick={() => handleAccordionClick("irs_filings", 3)}
           />
@@ -185,14 +185,14 @@ const MaintainingABusiness = () => {
           <Accordion
             title="Register a Business Name"
             content="A Doing Business As (DBA) filing allows corporations, LLCs, nonprofits, and other business entities to do business under a name different than the one that appears on their original incorporation documents. Ascend can complete DBA registration for you, which could offer your business better visibility, enhanced credibility, and other benefits."
-            link="/DBA_Business_Name"
+            link="/dba-business-name"
             isOpen={openAccordionIndex["other_filings"] === 0}
             onClick={() => handleAccordionClick("other_filings", 0)}
           />
           <Accordion
             title="Register in Additional States"
             content="If your business has offices, employees, or advertises in states outside of your company's home state, chances are you'll need to qualify your company in that state. Ascend can provide guidelines to help you understand whether you need to qualify your business and help you file the necessary paperwork to obtain a Certificate of Authority."
-            link="/Register_in_Additional_States"
+            link="/register-in-additional-states"
             isOpen={openAccordionIndex["other_filings"] === 1}
             onClick={() => handleAccordionClick("other_filings", 1)}
           />

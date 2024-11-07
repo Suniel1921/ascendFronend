@@ -1,33 +1,35 @@
-.fwa-annual-report-container {
-    padding: 20px;
-}
-
 .fwa-annual-report-list {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .fwa-annual-report-list-item {
-    margin: 10px 0;
-    cursor: pointer;
-    color: var(--darkBlue);
+  margin: 10px 0;
+  cursor: pointer;
+  color: var(--darkBlue);
+}
+
+.fwa-annual-report-section h3 {
+  color: var(--deepBlue);
 }
 
 .fwa-annual-report-question:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .fwa-annual-report-section {
-    margin-top: 40px;
+  margin-top: 4%;
 }
-
+.tabs-annual-report-tab-content p {
+  margin-top: 0;
+}
 .fwa-annual-report-back-to-top {
-    cursor: pointer;
-    color: var(--darkBlue);
-    margin-top: 20px;
-    display: inline-block;
+  cursor: pointer;
+  color: var(--darkBlue);
+  margin-top: 20px;
+  display: inline-block;
 }
 
 .fwa-annual-report-back-to-top:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }

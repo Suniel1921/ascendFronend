@@ -1,43 +1,46 @@
 .FQA_DBA_Business_Name-heading {
-    text-align: center;
-    color: #3c3c3c;
-    font-size: 36px;
-    font-weight: 500;
-    margin-top: 70px;
-    width: 60%;
-    margin: 70px auto;
-}
-
-.FQA_DBA_Business_Name-container {
-    padding: 20px;
+  text-align: center;
+  color: #3c3c3c;
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 70px;
+  width: 60%;
+  margin: 70px auto;
 }
 
 .FQA_DBA_Business_Name-list {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .FQA_DBA_Business_Name-list-item {
-    margin: 10px 0;
-    cursor: pointer;
-    color: var(--darkBlue);
+  margin: 10px 0;
+  cursor: pointer;
+  color: var(--darkBlue);
 }
 
 .FQA_DBA_Business_Name-question:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .FQA_DBA_Business_Name-section {
-    margin-top: 40px;
+  margin-top: 2%;
+}
+
+.FQA_DBA_Business_Name-section h3 {
+  color: var(--deepBlue);
+}
+.FQA_DBA_Business_Name-section h2 {
+  color: var(--deepBlue);
 }
 
 .FQA_DBA_Business_Name-back-to-top {
-    cursor: pointer;
-    color: var(--darkBlue);
-    margin-top: 20px;
-    display: inline-block;
+  cursor: pointer;
+  color: var(--darkBlue);
+  margin-top: 1%;
+  display: inline-block;
 }
 
 .FQA_DBA_Business_Name-back-to-top:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }

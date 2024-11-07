@@ -1,43 +1,80 @@
 .bylaws-heading {
-    text-align: center;
-    color: #3c3c3c;
-    font-size: 36px;
-    font-weight: 500;
-    margin-top: 70px;
-    width: 60%;
-    margin: 70px auto;
-}
-
-.bylaws-container {
-    padding: 20px;
+  text-align: center;
+  color: var(--deepBlue);
+  font-size: 28px;
+  font-weight: 500;
+  margin: 7% auto 4% auto;
+  width: 60%;
 }
 
 .bylaws-list {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
+.bylaws-section h3 {
+  color: var(--deepBlue);
+}
 .bylaws-list-item {
-    margin: 10px 0;
-    cursor: pointer;
-    color: var(--darkBlue);
+  margin: 10px 0;
+  cursor: pointer;
+  color: var(--darkBlue);
 }
 
 .bylaws-question:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .bylaws-section {
-    margin-top: 40px;
+  margin-top: 4%;
 }
 
 .bylaws-back-to-top {
-    cursor: pointer;
-    color: var(--darkBlue);
-    margin-top: 20px;
-    display: inline-block;
+  cursor: pointer;
+  color: var(--darkBlue);
+  margin-top: 20px;
+  display: inline-block;
 }
 
 .bylaws-back-to-top:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .bylaws-heading {
+    font-size: 22px;
+    margin: 10% auto 2% auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .bylaws-heading {
+    font-size: 20px;
+    margin: 12% auto 2% auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .bylaws-heading {
+    padding: 0 1%;
+    font-size: 18px;
+    margin: 22% 0 5% 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .bylaws-container h2 {
+    font-size: 18px;
+  }
+  .bylaws-container .bylaws-list {
+    margin-left: 4%;
+  }
+
+  .bylaws-back-to-top {
+    margin-top: 2%;
+  }
+
+  .tabs-by-laws-tab-content ul {
+    margin-left: 5%;
+  }
 }
