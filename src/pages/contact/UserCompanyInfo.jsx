@@ -21,11 +21,9 @@ const FormInput = ({ label, type = "text", ...props }) => (
 const UserCompanyInfo = () => {
   const navigate = useNavigate();
 
-  
   // Retrieve data from localStorage
-  const localStorageData = JSON.parse(localStorage.getItem('contactFormData')) || {};
-
-
+  const localStorageData =
+    JSON.parse(localStorage.getItem("contactFormData")) || {};
 
   const formik = useFormik({
     initialValues: {
@@ -34,23 +32,23 @@ const UserCompanyInfo = () => {
       industry: "",
       businessDescription: "",
       llcExistIndefinitely: "",
-      address: { 
+      address: {
         country: localStorageData.country || "",
-        street: localStorageData.street || "", 
-        city: localStorageData.city || "", 
-        state: localStorageData.state || "", 
-        postalcode: localStorageData.postalCode || "",  
-        },
+        street: localStorageData.street || "",
+        city: localStorageData.city || "",
+        state: localStorageData.state || "",
+        postalcode: localStorageData.postalCode || "",
+      },
 
       contact: {
         firstName: localStorageData.firstName || "",
         middleName: localStorageData.middleName || "",
         lastName: localStorageData.lastName || "",
         country: localStorageData.country || "",
-        street: localStorageData.street || "", 
-        city: localStorageData.city || "", 
-        state: localStorageData.state || "", 
-        postalcode: localStorageData.postalCode || "",  
+        street: localStorageData.street || "",
+        city: localStorageData.city || "",
+        state: localStorageData.state || "",
+        postalcode: localStorageData.postalCode || "",
       },
       businessRunner: "",
 
@@ -60,10 +58,10 @@ const UserCompanyInfo = () => {
           middleName: localStorageData.middleName || "",
           lastName: localStorageData.lastName || "",
           country: localStorageData.country || "",
-          street: localStorageData.street || "", 
-          city: localStorageData.city || "", 
-          state: localStorageData.state || "", 
-          postalcode: localStorageData.postalCode || "", 
+          street: localStorageData.street || "",
+          city: localStorageData.city || "",
+          state: localStorageData.state || "",
+          postalcode: localStorageData.postalCode || "",
         },
       ],
       importantNotice: false,
@@ -72,10 +70,10 @@ const UserCompanyInfo = () => {
         middleName: localStorageData.middleName || "",
         lastName: localStorageData.lastName || "",
         country: localStorageData.country || "",
-        street: localStorageData.street || "", 
-        city: localStorageData.city || "", 
-        state: localStorageData.state || "", 
-        postalcode: localStorageData.postalCode || "", 
+        street: localStorageData.street || "",
+        city: localStorageData.city || "",
+        state: localStorageData.state || "",
+        postalcode: localStorageData.postalCode || "",
       },
       llcDuration: "",
       incorporator: {
@@ -83,20 +81,20 @@ const UserCompanyInfo = () => {
         middleName: localStorageData.middleName || "",
         lastName: localStorageData.lastName || "",
         country: localStorageData.country || "",
-        street: localStorageData.street || "", 
-        city: localStorageData.city || "", 
-        state: localStorageData.state || "", 
-        postalcode: localStorageData.postalCode || "", 
+        street: localStorageData.street || "",
+        city: localStorageData.city || "",
+        state: localStorageData.state || "",
+        postalcode: localStorageData.postalCode || "",
       },
       billingContact: {
         firstName: localStorageData.firstName || "",
         middleName: localStorageData.middleName || "",
         lastName: localStorageData.lastName || "",
         country: localStorageData.country || "",
-        street: localStorageData.street || "", 
-        city: localStorageData.city || "", 
-        state: localStorageData.state || "", 
-        postalcode: localStorageData.postalCode || "", 
+        street: localStorageData.street || "",
+        city: localStorageData.city || "",
+        state: localStorageData.state || "",
+        postalcode: localStorageData.postalCode || "",
       },
       businessEmail: localStorageData.email || "",
       businessPhone: localStorageData.phoneNumber || "",
@@ -136,9 +134,8 @@ const UserCompanyInfo = () => {
       <div className="userCompanyInfo">
         <h3>Tell us About your Company</h3>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint dicta
-          autem dignissimos quam, nihil tempora aut aperiam repellat impedit
-          culpa?
+          The more complete the information you provide, the faster we'll be
+          able to process your order.
         </p>
 
         <div className="userCompanyInfoForm">
@@ -231,7 +228,7 @@ const UserCompanyInfo = () => {
                 value={formik.values.address.country}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
-                {...formik.getFieldProps('country')}
+                {...formik.getFieldProps("country")}
               />
               <FormInput
                 label="Street"
@@ -819,8 +816,7 @@ const UserCompanyInfo = () => {
                 </h3>
 
                 <div className="bg-slate p-8">
-
-                <FormInput
+                  <FormInput
                     label="Email"
                     name="businessEmail"
                     id="businessEmail"
@@ -828,7 +824,6 @@ const UserCompanyInfo = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-
 
                   <FormInput
                     label="Phone"
@@ -838,8 +833,6 @@ const UserCompanyInfo = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-
-                 
                 </div>
               </div>
 
@@ -934,6 +927,3 @@ const UserCompanyInfo = () => {
 };
 
 export default UserCompanyInfo;
-
-
-

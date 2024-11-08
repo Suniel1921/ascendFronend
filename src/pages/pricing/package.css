@@ -1,6 +1,6 @@
 /* Main container for package selection */
 .packageSelectionContainer {
-  margin-top: 30px;
+  margin: 1% auto 4% auto;
 }
 
 /* Styling for package cards */
@@ -116,5 +116,15 @@
 
   .packageHeadingData button {
     padding: 0.5rem 1rem; /* Adjust button size */
+  }
+
+  .packageSelectionContainer {
+    margin: 8% auto 6% auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .packageSelectionContainer {
+    margin: 20% auto 9% auto;
   }
 }

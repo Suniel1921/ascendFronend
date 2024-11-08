@@ -1,17 +1,28 @@
-.checkout-title{
+.checkout-title {
   margin-top: 34px;
   margin-bottom: 34px;
 }
 
-
-.payment-form {
+.checkout-two-col {
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  gap: 1.5rem;
+  justify-content: space-between;
 }
 
+.checkout-two-col .payment-form {
+  width: 50%;
+}
+
+.payment-form label {
+  color: #666464;
+  font-size: 16px;
+}
+
+.checkout-two-col .cartCardContainer {
+  width: 45%;
+}
 .form-title {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
 }
 
@@ -19,9 +30,11 @@
   margin-bottom: 1rem;
 }
 
-.card-number-wrapper, .card-expiry-cvc-wrapper {
+.card-number-wrapper {
+  padding-bottom: 3%;
+}
+.card-expiry-cvc-wrapper {
   display: flex;
-  flex-direction: column;
   margin-bottom: 1rem;
 }
 
@@ -30,7 +43,8 @@
   justify-content: space-between;
 }
 
-.card-expiry-wrapper, .card-cvc-wrapper {
+.card-expiry-wrapper,
+.card-cvc-wrapper {
   width: 48%;
 }
 
@@ -41,20 +55,22 @@
 }
 
 .submit-button {
-  background-color: #007bff;
+  background-color: var(--darkBlue);
   border: none;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 2rem;
   border-radius: 4px;
   cursor: pointer;
   font-size: 1rem;
+  width: 28%;
 }
 
 .submit-button:disabled {
   background-color: #ccc;
 }
 
-.error-message, .success-message {
+.error-message,
+.success-message {
   margin-top: 1rem;
   font-size: 1rem;
 }
@@ -65,4 +81,28 @@
 
 .success-message {
   color: green;
+}
+
+@media (max-width: 768px) {
+  .checkout-two-col {
+    display: block;
+    margin: 12% auto 5% auto;
+  }
+
+  .checkout-two-col .payment-form {
+    width: 100%;
+  }
+  .checkout-two-col .cartCardContainer {
+    margin-top: 4%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .checkout-two-col {
+    margin: 22% auto 5% auto;
+  }
+  .submit-button {
+    width: 45%;
+  }
 }

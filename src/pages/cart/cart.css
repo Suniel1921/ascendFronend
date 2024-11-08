@@ -150,7 +150,7 @@
 .cart-container {
   width: 90%;
   margin: 0 auto;
-  margin: 5% auto 4% auto;
+  margin: 7% auto 4% auto;
 }
 
 .cart-container h1,
@@ -158,7 +158,7 @@
   color: var(--deepBlue);
 }
 .cart-title {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -330,14 +330,17 @@
 } */
 
 .empty_continue_Shopping {
-  background-color: #c73646;
+  background-color: var(--deepBlue);
   color: var(--whiteColor);
 }
 
 @media (max-width: 1024px) {
   .cart-container {
     width: 95%;
-    margin: 8% 2% 6% 2%;
+    margin: 10% 4% 6% 4%;
+  }
+  .cart-title {
+    font-size: 26px;
   }
 }
 

@@ -1,8 +1,8 @@
 // import React, { useEffect, useState } from "react";
 // import { SlLocationPin } from "react-icons/sl";
 // import { FaExternalLinkAlt, FaCheck } from "react-icons/fa";
-// import { Spin } from "antd"; 
-// import "antd/dist/reset.css"; 
+// import { Spin } from "antd";
+// import "antd/dist/reset.css";
 // import "../pricing/quotePricing.css";
 // import axios from "axios";
 // import toast from "react-hot-toast";
@@ -22,7 +22,7 @@
 //         `${import.meta.env.VITE_REACT_APP_URL}/api/v1/price/getAllPrice`
 //       );
 //       if (response.data.success) {
-//         setPriceData(response.data.allPrice); 
+//         setPriceData(response.data.allPrice);
 //       }
 //     } catch (error) {
 //       toast.error(
@@ -31,7 +31,7 @@
 //           : "Something went wrong"
 //       );
 //     } finally {
-//       setLoading(false); 
+//       setLoading(false);
 //     }
 //   };
 
@@ -217,13 +217,7 @@
 
 // export default QuotePricing;
 
-
-
-
-
-// new code testing 
-
-
+// new code testing
 
 import React, { useEffect, useState } from "react";
 import { SlLocationPin } from "react-icons/sl";
@@ -254,9 +248,7 @@ const QuotePricing = () => {
       }
     } catch (error) {
       toast.error(
-        error.response
-          ? error.response.data.message
-          : "Something went wrong"
+        error.response ? error.response.data.message : "Something went wrong"
       );
     } finally {
       setLoading(false);
@@ -272,10 +264,15 @@ const QuotePricing = () => {
   const handleStateChange = (event) => {
     const selected = event.target.value;
     setSelectedState(selected);
-    
+
     // Save selected state data to local storage
-    const selectedStateData = StateData.find(state => state.stateName === selected);
-    localStorage.setItem("selectedStateData", JSON.stringify(selectedStateData));
+    const selectedStateData = StateData.find(
+      (state) => state.stateName === selected
+    );
+    localStorage.setItem(
+      "selectedStateData",
+      JSON.stringify(selectedStateData)
+    );
   };
 
   // Navigate to the Package page with the selected state
@@ -284,7 +281,9 @@ const QuotePricing = () => {
   };
 
   // Filter StateData based on selected state
-  const filteredStateData = StateData.find(state => state.stateName === selectedState);
+  const filteredStateData = StateData.find(
+    (state) => state.stateName === selectedState
+  );
 
   // Render the component
   return (
@@ -303,21 +302,20 @@ const QuotePricing = () => {
             <div className="quote-search-logo">
               <SlLocationPin className="quote-icon-map" />
               <span className="countryList">
-              <select
-  name="Country"
-  id="Country"
-  className="quote-select"
-  value={selectedState}
-  onChange={handleStateChange}
->
-  <option value="">Select State</option> {/* Default option */}
-  {StateData.map(state => (
-    <option key={state.abbreviation} value={state.stateName}>
-      {state.stateName}
-    </option>
-  ))}
-</select>
-
+                <select
+                  name="Country"
+                  id="Country"
+                  className="quote-select"
+                  value={selectedState}
+                  onChange={handleStateChange}
+                >
+                  <option value="">Select State</option> {/* Default option */}
+                  {StateData.map((state) => (
+                    <option key={state.abbreviation} value={state.stateName}>
+                      {state.stateName}
+                    </option>
+                  ))}
+                </select>
               </span>
             </div>
             <hr />
@@ -372,7 +370,7 @@ const PricingCard = ({ pData, onSelect }) => {
           {pData.contentList.map((content, index) => (
             <li key={index}>
               <FaCheck className="quote-check-icon" />
-              {content}
+              <span>{content}</span>
             </li>
           ))}
         </ul>

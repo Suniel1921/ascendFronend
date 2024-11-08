@@ -1,4 +1,3 @@
-
 .quote-main-container {
   display: flex;
   flex-wrap: wrap;
@@ -10,7 +9,7 @@
   padding: 20px;
   box-sizing: border-box;
 }
-.countryList{
+.countryList {
   width: 50%;
 }
 
@@ -74,7 +73,7 @@
   margin: 0 0 20px;
 }
 
-.childQuote{
+.childQuote {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -124,16 +123,6 @@
   visibility: visible;
   opacity: 1;
 }
-
-
-
-
-
-
-
-
-
-
 
 .quote-help-links li,
 .quote-top-states-list li {
@@ -194,7 +183,14 @@
 }
 
 .quote-card-list li {
+  margin-left: 2%;
+  display: flex;
   margin-bottom: 10px;
+}
+
+.quote-card-list li .quote-check-icon {
+  margin-right: 2%;
+  color: var(--darkBlue);
 }
 
 .quote-faq {
@@ -207,6 +203,9 @@
   margin-left: 5px;
 }
 
+.quote-card-list span {
+  width: 100%;
+}
 .quote-pricing {
   flex: 1;
   background-color: #e6f7ff;
@@ -243,26 +242,20 @@
 }
 
 .quote-select-button:hover {
-  background-color: #c1223b;
+  opacity: 0.9;
 }
-
-
 
 /* Styles for the loading spinner */
 .loading-spinner {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px; 
+  height: 200px;
 }
 
-
-
-
-
-
 @media (max-width: 1024px) {
-  .quote-full-container, .quote-left-side {
+  .quote-full-container,
+  .quote-left-side {
     flex: 1 1 100%;
   }
 
@@ -275,7 +268,8 @@
     flex-direction: column;
   }
 
-  .quote-card-content, .quote-pricing {
+  .quote-card-content,
+  .quote-pricing {
     width: 100%;
     padding: 20px;
   }
@@ -308,7 +302,8 @@
     padding: 10px;
   }
 
-  .quote-full-container, .quote-left-side {
+  .quote-full-container,
+  .quote-left-side {
     padding: 10px;
   }
 
@@ -336,10 +331,8 @@
   .quote-pricing h3 {
     font-size: 1.5rem;
   }
+
+  .quote-help-container {
+    margin-top: 0;
+  }
 }
-
-
-
-
-
-
