@@ -1,80 +1,97 @@
-.ManageOrdersContainer{
+.ManageOrdersContainer {
   height: 100vh;
 }
-.manageOrderHeading{
+.manageOrderHeading {
   margin-top: 62px;
 }
 
-.adminUpdateBtn{
+.adminUpdateBtn {
+  background-color: var(--darkBlue);
   color: var(--whiteColor);
 }
-.selectProcessingDropdown{
+
+.admin-bttn-wrapper {
+  display: flex;
+  gap: 10px;
+  color: #fff;
+}
+
+.admin-bttn-wrapper svg {
+  color: #fff;
+}
+
+.adminUpdateBtn:hover {
+  opacity: 0.8;
+}
+.selectProcessingDropdown {
+  color: #fff !important;
   background-color: transparent;
 }
-.selectProcessingDropdown , option{
+.selectProcessingDropdown,
+option {
   background-color: transparent;
   color: black;
 }
 
-   .ManageOrdersContainer {
-    display: flex;
-  }
-  
-  .adminDashboard {
-    display: flex;
-    width: 100%;
-  }
-  
-  .sideMenuContainer {
-    flex: 1;
-  }
-  
-  .container {
-    flex: 4;
-    padding: 20px;
-  }
-  
-  .ordersTable {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .tableHeader, .tableRow {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .tableHeader {
-    font-weight: bold;
-  }
+.ManageOrdersContainer {
+  display: flex;
+}
 
-  
- 
-  .tableRow div, .tableHeader div {
-    flex: 1;
-    text-align: left;
-    padding: 5px;
-  }
-  
-  select {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 5px 10px;
-    background-color: #4CAF50;
-    color:black;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* button:hover {
+.adminDashboard {
+  display: flex;
+  width: 100%;
+}
+
+.sideMenuContainer {
+  flex: 1;
+}
+
+.container {
+  flex: 4;
+  padding: 20px;
+}
+
+.ordersTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableHeader,
+.tableRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.tableHeader {
+  font-weight: bold;
+}
+
+.tableRow div,
+.tableHeader div {
+  flex: 1;
+  text-align: left;
+  padding: 5px;
+}
+
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* button:hover {
     background-color: #45a049;
   }
    */

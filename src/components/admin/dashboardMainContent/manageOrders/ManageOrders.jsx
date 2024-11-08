@@ -36,7 +36,7 @@
 //       setOrders(prevOrders => prevOrders.map(order => order._id === orderId ? { ...order, status: newStatus } : order));
 //       setSelectedStatuses(prevStatuses => ({ ...prevStatuses, [orderId]: '' })); // Reset the selected status
 //       toast.success('Data udpated')
-      
+
 //     } catch (error) {
 //       console.error('Error updating order status', error);
 //     }
@@ -85,17 +85,6 @@
 
 // export default ManageOrders;
 
-
-
-
-
-
-
-
-
-
-
-
 // import React, { useEffect, useState } from 'react';
 // import axios from 'axios';
 // import SideMenu from '../../sideMenu/SideMenu';
@@ -115,7 +104,7 @@
 //       try {
 //         const response = await axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/order/getOrders`);
 //         console.log('order res', response)
-        
+
 //         setOrders(response.data);
 //       } catch (error) {
 //         console.error('Error fetching orders', error);
@@ -202,16 +191,6 @@
 // };
 
 // export default ManageOrders;
-
-
-
-
-
-
-
-
-
-
 
 // import React, { useEffect, useState } from 'react';
 // import axios from 'axios';
@@ -331,13 +310,6 @@
 // };
 
 // export default ManageOrders;
-
-
-
-
-
-
-
 
 // import React, { useEffect, useState } from 'react';
 // import axios from 'axios';
@@ -514,23 +486,17 @@
 
 // export default ManageOrders;
 
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import SideMenu from "../../sideMenu/SideMenu";
+import { Pagination, Modal, Button } from "antd";
+import toast from "react-hot-toast";
+import "../manageOrders/manageOrder.css";
 
-
-
-
-
-
-
-
-
-
-
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import SideMenu from '../../sideMenu/SideMenu';
-import { Pagination, Modal, Button } from 'antd';
-import toast from 'react-hot-toast';
-import '../manageOrders/manageOrder.css';
+import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
+import ContactsIcon from "@mui/icons-material/Contacts";
+import IconButton from "@mui/material/IconButton";
+import Tooltip from "@mui/material/Tooltip";
 
 const ManageOrders = () => {
   const [orders, setOrders] = useState([]);
@@ -542,13 +508,17 @@ const ManageOrders = () => {
   const [contactInfoVisible, setContactInfoVisible] = useState(false); // State to manage contact info modal
   const [contactInfo, setContactInfo] = useState(null); // State to store contact info data
   const pageSize = 5; // Number of orders per page for pagination 😊
-  const statuses = ['pending', 'processing', 'verified'];
+  const statuses = ["pending", "processing", "verified"];
+
+  const [showUpdate, setShowUpdate] = useState(false);
 
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/order/getOrders`);
-        console.log('Order with contact info is:', response.data);
+        const response = await axios.get(
+          `${import.meta.env.VITE_REACT_APP_URL}/api/v1/order/getOrders`
+        );
+        console.log("Order with contact info is:", response.data);
 
         if (response.data.success) {
           setOrders(response.data.orderInfo);
@@ -556,8 +526,8 @@ const ManageOrders = () => {
           toast.error(error.response.data.message);
         }
       } catch (error) {
-        console.error('Error fetching orders:', error);
-        toast.error('Error fetching orders');
+        console.error("Error fetching orders:", error);
+        toast.error("Error fetching orders");
       }
     };
 
@@ -565,27 +535,38 @@ const ManageOrders = () => {
   }, []);
 
   const handleStatusChange = (orderId, newStatus) => {
-    setSelectedStatuses(prevStatuses => ({
+    setSelectedStatuses((prevStatuses) => ({
       ...prevStatuses,
-      [orderId]: newStatus
+      [orderId]: newStatus,
     }));
+    setShowUpdate(true);
   };
 
   const updateStatus = async (orderId) => {
     const newStatus = selectedStatuses[orderId];
     try {
-      const response = await axios.put(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/order/updateOrderStatus`, { orderId, status: newStatus });
+      const response = await axios.put(
+        `${import.meta.env.VITE_REACT_APP_URL}/api/v1/order/updateOrderStatus`,
+        { orderId, status: newStatus }
+      );
 
       if (response.data.success) {
-        setOrders(prevOrders => prevOrders.map(order => order._id === orderId ? { ...order, status: newStatus } : order));
-        setSelectedStatuses(prevStatuses => ({ ...prevStatuses, [orderId]: '' }));
+        setOrders((prevOrders) =>
+          prevOrders.map((order) =>
+            order._id === orderId ? { ...order, status: newStatus } : order
+          )
+        );
+        setSelectedStatuses((prevStatuses) => ({
+          ...prevStatuses,
+          [orderId]: "",
+        }));
         toast.success(response.data.message);
       } else {
-        toast.error(response.data.message || 'Failed to update order status');
+        toast.error(response.data.message || "Failed to update order status");
       }
     } catch (error) {
-      console.error('Error updating order status:', error);
-      toast.error('Error updating order status');
+      console.error("Error updating order status:", error);
+      toast.error("Error updating order status");
     }
   };
 
@@ -595,17 +576,19 @@ const ManageOrders = () => {
 
   const showDocuments = async (orderId) => {
     try {
-      const response = await axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/fileUpload/allDocuments`);
+      const response = await axios.get(
+        `${import.meta.env.VITE_REACT_APP_URL}/api/v1/fileUpload/allDocuments`
+      );
       if (response.data.success) {
         setDocuments(response.data.getAllDocuments);
         setCurrentOrder(orderId);
         setVisible(true);
       } else {
-        toast.error(response.data.message || 'Failed to fetch documents');
+        toast.error(response.data.message || "Failed to fetch documents");
       }
     } catch (error) {
-      console.error('Error fetching documents:', error);
-      toast.error('Error fetching documents');
+      console.error("Error fetching documents:", error);
+      toast.error("Error fetching documents");
     }
   };
 
@@ -631,9 +614,11 @@ const ManageOrders = () => {
   return (
     <div className="ManageOrdersContainer">
       <div className="adminDashboard">
-        <div className="sideMenuContainer"><SideMenu /></div>
+        <div className="sideMenuContainer">
+          <SideMenu />
+        </div>
         <div className="container">
-          <h3 className='manageOrderHeading'>Manage Your Customer Orders</h3>
+          <h3 className="manageOrderHeading">Manage Your Customer Orders</h3>
           <div className="ordersTable">
             <div className="tableHeader">
               <div>User</div>
@@ -641,26 +626,63 @@ const ManageOrders = () => {
               <div>Status</div>
               <div>Action</div>
             </div>
-            {paginatedOrders.map(order => (
+            {paginatedOrders.map((order) => (
               <div className="tableRow" key={order._id}>
                 <div>{order.user.name}</div>
-                <div>{order.quoteData.map(item => item.heading).join(', ')}</div> {/* Display headings */}
                 <div>
-                  <select className='selectProcessingDropdown'
+                  {order.quoteData.map((item) => item.heading).join(", ")}
+                </div>{" "}
+                {/* Display headings */}
+                <div>
+                  <select
+                    className="selectProcessingDropdown"
                     value={selectedStatuses[order._id] || order.status}
-                    onChange={(e) => handleStatusChange(order._id, e.target.value)}
+                    onChange={(e) =>
+                      handleStatusChange(order._id, e.target.value)
+                    }
                   >
-                    {statuses.map(status => (
+                    {statuses.map((status) => (
                       <option key={status} value={status}>
                         {status.charAt(0).toUpperCase() + status.slice(1)}
                       </option>
                     ))}
                   </select>
                 </div>
-                <div>
-                  <button className='adminUpdateBtn' onClick={() => updateStatus(order._id)}>Update</button>
-                  <button className='adminUpdateBtn' onClick={() => showDocuments(order._id)}>View Docs</button>
-                  <button className='adminUpdateBtn' onClick={() => showContactInfo(order)}>User Contact Info</button>
+                <div className="admin-bttn-wrapper">
+                  <Tooltip
+                    title="View Docs"
+                    className="adminUpdateBtn"
+                    onClick={() => showDocuments(order._id)}
+                  >
+                    <IconButton>
+                      <RemoveRedEyeIcon />
+                    </IconButton>
+                  </Tooltip>
+
+                  <Tooltip
+                    title="User Contact Info"
+                    className="adminUpdateBtn"
+                    onClick={() => showContactInfo(order)}
+                  >
+                    <IconButton>
+                      <ContactsIcon />
+                    </IconButton>
+                  </Tooltip>
+                  {/* <button
+                    className="adminUpdateBtn"
+                    onClick={() => showContactInfo(order)}
+                  >
+                    User Contact Info
+                  </button> */}
+
+                  {showUpdate && (
+                    <button
+                      className="adminUpdateBtn"
+                      onClick={() => updateStatus(order._id)}
+                    >
+                      Update
+                    </button>
+                  )}
                 </div>
               </div>
             ))}
@@ -670,7 +692,7 @@ const ManageOrders = () => {
             pageSize={pageSize}
             total={orders.length}
             onChange={handlePageChange}
-            style={{ textAlign: 'center', marginTop: '20px' }}
+            style={{ textAlign: "center", marginTop: "20px" }}
           />
         </div>
       </div>
@@ -689,12 +711,18 @@ const ManageOrders = () => {
         {currentOrder && documents.length > 0 ? (
           <div>
             <h4>Documents for Order ID: {currentOrder}</h4>
-            {documents.map(doc => (
+            {documents.map((doc) => (
               <div key={doc._id}>
                 <h3>{doc.name}</h3>
                 <div>
                   {doc.images.map((image, index) => (
-                    <img key={index} src={image} alt={`Document ${index}`} width={200} style={{ marginRight: 8 }} />
+                    <img
+                      key={index}
+                      src={image}
+                      alt={`Document ${index}`}
+                      width={200}
+                      style={{ marginRight: 8 }}
+                    />
                   ))}
                 </div>
               </div>
@@ -718,17 +746,40 @@ const ManageOrders = () => {
       >
         {contactInfo ? (
           <div>
-            <p><strong>First Name:</strong> {contactInfo.firstName}</p>
-            <p><strong>Last Name:</strong> {contactInfo.lastName}</p>
-            <p><strong>Email:</strong> {contactInfo.email}</p>
-            <p><strong>Phone Number:</strong> {contactInfo.phoneNumber}</p>
-            <p><strong>Secondary Phone Number:</strong> {contactInfo.secondaryPhoneNumber}</p>
-            <p><strong>Street:</strong> {contactInfo.street}</p>
-            <p><strong>City:</strong> {contactInfo.city}</p>
-            <p><strong>State:</strong> {contactInfo.state}</p>
-            <p><strong>Postal Code:</strong> {contactInfo.postalCode}</p>
-            <p><strong>Country:</strong> {contactInfo.country}</p>
-            <p><strong>Industry:</strong> {contactInfo.industry}</p>
+            <p>
+              <strong>First Name:</strong> {contactInfo.firstName}
+            </p>
+            <p>
+              <strong>Last Name:</strong> {contactInfo.lastName}
+            </p>
+            <p>
+              <strong>Email:</strong> {contactInfo.email}
+            </p>
+            <p>
+              <strong>Phone Number:</strong> {contactInfo.phoneNumber}
+            </p>
+            <p>
+              <strong>Secondary Phone Number:</strong>{" "}
+              {contactInfo.secondaryPhoneNumber}
+            </p>
+            <p>
+              <strong>Street:</strong> {contactInfo.street}
+            </p>
+            <p>
+              <strong>City:</strong> {contactInfo.city}
+            </p>
+            <p>
+              <strong>State:</strong> {contactInfo.state}
+            </p>
+            <p>
+              <strong>Postal Code:</strong> {contactInfo.postalCode}
+            </p>
+            <p>
+              <strong>Country:</strong> {contactInfo.country}
+            </p>
+            <p>
+              <strong>Industry:</strong> {contactInfo.industry}
+            </p>
           </div>
         ) : (
           <p>No contact information available</p>
