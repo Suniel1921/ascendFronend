@@ -169,9 +169,9 @@ const App = () => {
               <Route path="/checkout" element={<Checkout />} />
 
               {/* Suman */}
-              <Route path="/About_Ascend" element={<About_Ascend />} />
+              <Route path="/about-ascend" element={<About_Ascend />} />
               <Route
-                path="/Corporate_Gurantee"
+                path="/corporate-gurantee"
                 element={<Corporate_Gurantee />}
               />
               <Route path="/Customer_review" element={<Customer_review />} />

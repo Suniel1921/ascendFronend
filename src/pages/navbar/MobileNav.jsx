@@ -310,7 +310,7 @@ export default function TemporaryDrawer() {
         <AccordionDetails>
           <NavLink
             className="dropdownLink_heading"
-            to="/About_Ascend"
+            to="/about-ascend"
             onClick={toggleDrawer(false)}
           >
             About Ascend.com
@@ -318,7 +318,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/Corporate_Gurantee"
+            to="/corporate-gurantee"
             onClick={toggleDrawer(false)}
           >
             Corporate Compilance Gurantee

@@ -1,25 +1,81 @@
 .top_about_ascend {
-    height: 30vh;
-    width: 100%;
-    overflow: hidden;
-    position: relative; /* Positioning the container relative to allow absolute positioning of the text */
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  position: relative; /* Positioning the container relative to allow absolute positioning of the text */
+}
+
+.tabs-container {
+  line-height: 1.5;
 }
 
 .top_ascend_image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.tabs-buttons .tab-button {
+  color: var(--deepBlue);
 }
 
 .image_over_paragraph {
-    position: absolute; /* Positioning the text absolutely within the container */
-    color: #003B5C;
-    top: 6vh;
-    width:40%;
-    text-align: left; /* Centering the text horizontally */
-    margin: 0 auto 0 12%; /* Ensuring the text block is centered */
-    padding: 10px;
-    font-size: 36px; /* Adjust font size as needed */
-    font-weight:500;
+  position: absolute; /* Positioning the text absolutely within the container */
+  color: var(--deepBlue);
+  top: 60%;
+  transform: translateY(-60%);
+  width: 55%;
+  text-align: left; /* Centering the text horizontally */
+  margin: 0 auto 0 12%; /* Ensuring the text block is centered */
+  padding: 10px;
+  font-size: 26px; /* Adjust font size as needed */
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .main_about_ascend .tabs-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main_about_ascend .tabs-container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 650px) {
+  .main_about_ascend .tabs-container {
+    width: 100%;
+    padding: 0 1%;
+  }
+
+  .image_over_paragraph {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    line-height: 1.5;
+  }
+
+  .tabs-container .tab-button {
+    font-size: 18px;
+    padding: 4% 1%;
+  }
+
+  .main_about_ascend .tabs-container {
+    margin: 5% auto;
+  }
+
+  .service-list {
+    margin-left: 0;
+  }
+  .tabs-container .service-list li {
+    margin-left: 0;
+  }
+
+  .main_about_ascend .testimonial-wrapper {
+    margin-top: 12%;
+  }
 }

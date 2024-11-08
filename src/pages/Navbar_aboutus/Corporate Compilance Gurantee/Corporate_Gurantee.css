@@ -9,19 +9,27 @@
 
 .heading_gurantee {
   text-align: center;
-  margin: 40px 0 50px;
-  font-size: 1.8rem;
-  color: #333;
+  margin: 6% 0 1% 0;
+  font-size: 28px;
+  color: var(--deepBlue);
 }
 
 .main_bottom_div {
-  margin-top: 60px;
+  margin-top: 4%;
   display: flex;
   gap: 20px;
 }
 
 .left_bottom_gurantee {
   width: 75%;
+}
+
+.left_bottom_gurantee li {
+  margin-left: 4%;
+}
+
+.left_bottom_gurantee h2 {
+  color: var(--deepBlue);
 }
 
 .right_bottom_gurantee {
@@ -76,12 +84,12 @@
 .left_button_corporate {
   padding: 10px 40px 10px 40px;
   border-radius: 5px;
-  background-color: #da5e73;
+  background-color: var(--deepBlue);
   color: #fff;
 }
 @media (max-width: 768px) {
   .corporate_gurantee_container {
-    width: 90%;
+    width: 98%;
   }
   .main_bottom_div {
     display: block;
@@ -99,5 +107,13 @@
   /* styles for screen width between 768px and 1200px */
   .corporate_gurantee_container {
     width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  .heading_gurantee {
+    font-size: 20px;
+    width: 100%;
+    margin: 12% 0 0 0;
   }
 }
