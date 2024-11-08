@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 
 import "./MobileNav.css";
 
-import { IoMenu } from "react-icons/io5";
+import { IoMenu, IoClose } from "react-icons/io5";
 
 export default function TemporaryDrawer() {
   const [open, setOpen] = React.useState(false);
@@ -26,7 +26,7 @@ export default function TemporaryDrawer() {
           <img src="/img/logo.png" alt="Logo" />
         </NavLink>
       </div>
-      <Accordion>
+      <Accordion className="mob-nav-acc">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"
@@ -125,7 +125,7 @@ export default function TemporaryDrawer() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion>
+      <Accordion className="mob-nav-acc">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2-content"
@@ -224,7 +224,7 @@ export default function TemporaryDrawer() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion>
+      <Accordion className="mob-nav-acc">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3-content"
@@ -299,7 +299,7 @@ export default function TemporaryDrawer() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion>
+      <Accordion className="mob-nav-acc">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel4-content"
@@ -326,7 +326,7 @@ export default function TemporaryDrawer() {
           <br />
           <NavLink
             className="dropdownLink_heading"
-            to="/Customer_review"
+            to="/customer-review"
             onClick={toggleDrawer(false)}
           >
             Recent Customer Review
@@ -339,7 +339,11 @@ export default function TemporaryDrawer() {
 
   return (
     <div>
-      <IoMenu onClick={toggleDrawer(true)} className="menu-icon" />
+      {!open ? (
+        <IoMenu onClick={toggleDrawer(true)} className="menu-icon" />
+      ) : (
+        <IoClose className="menu-icon" />
+      )}
       <Drawer open={open} onClose={toggleDrawer(false)}>
         {DrawerList}
       </Drawer>

@@ -351,7 +351,7 @@ const Navbar = () => {
         </NavLink>
       </Menu.Item>
       <Menu.Item key="heading3">
-        <NavLink className="dropdownLink_heading" to="/Customer_review">
+        <NavLink className="dropdownLink_heading" to="/customer-review">
           Recent Customer Review
         </NavLink>
       </Menu.Item>
@@ -378,9 +378,7 @@ const Navbar = () => {
           </NavLink>
         </div>
 
-        <div>
-          <MobileNav />
-        </div>
+        <div></div>
         <div className="items_navbar">
           <ul>
             <li>
@@ -486,6 +484,8 @@ const Navbar = () => {
               />
             </NavLink>
           </Badge>
+
+          <MobileNav />
           {/* <button className="theme-toggle" onClick={toggleTheme}>
             {theme === 'light' ? <FaMoon /> : <FaSun />}
           </button> */}

@@ -174,7 +174,7 @@ const App = () => {
                 path="/corporate-gurantee"
                 element={<Corporate_Gurantee />}
               />
-              <Route path="/Customer_review" element={<Customer_review />} />
+              <Route path="/customer-review" element={<Customer_review />} />
 
               {/* Learning Center */}
               <Route path="/startup-task" element={<StartUp_Task />} />

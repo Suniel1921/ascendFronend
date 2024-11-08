@@ -1,10 +1,21 @@
 .menu-icon {
   color: #006998;
-  font-size: 22px;
+  font-size: 28px;
 }
+
+.mob-nav-acc .dropdownLink_heading {
+  line-height: 2;
+}
+
 /* Hide .menu-icon on desktop */
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 1024px) {
   .menu-icon {
     display: none;
   }
 }
+/* @media screen and (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+} */
