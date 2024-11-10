@@ -6,6 +6,15 @@
   color: var(--whiteColor);
 }
 
+.TotalPercentageOfWorkContainer span {
+  color: #fff !important;
+}
+
+.clientDocumentStatusContainer .ant-pagination-item-link {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
 .headerContainer {
   display: flex;
   justify-content: space-between;
