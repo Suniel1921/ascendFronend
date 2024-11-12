@@ -4,7 +4,7 @@
   gap: 20px;
   margin-top: 12px;
   grid-auto-rows: minmax(200px auto);
-  height: 90vh;
+  /* height: 90vh; */
   color: var(--whiteColor);
 }
 
@@ -38,4 +38,57 @@
 }
 .box7 {
   grid-column: span 2;
+}
+
+@media (max-width: 1024px) {
+  .client_Grid_Dashboard {
+    justify-content: center;
+    row-gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+  }
+  .client_charts {
+    padding: 10px;
+  }
+
+  .res-box {
+    width: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .client_Grid_Dashboard {
+    justify-content: center;
+    row-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+  }
+  .client_charts {
+    padding: 5px;
+  }
+
+  .res-box {
+    width: 150px;
+  }
+  .res-box-big {
+    width: 280px;
+  }
+
+  .clientDocumentStatusContainer li {
+    margin-left: 2%;
+  }
+}
+
+@media (max-width: 650px) {
+  .client_Grid_Dashboard {
+    display: block;
+  }
+  .res-box,
+  .res-box-big {
+    width: 100%;
+  }
 }

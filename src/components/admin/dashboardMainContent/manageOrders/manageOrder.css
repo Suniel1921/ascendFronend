@@ -95,3 +95,8 @@ button {
     background-color: #45a049;
   }
    */
+
+.ant-pagination .ant-pagination-item-link {
+  color: #000 !important;
+  background-color: #fff !important;
+}

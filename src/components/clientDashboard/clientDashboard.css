@@ -4,7 +4,13 @@
   gap: 20px;
   color: white;
   border-top: 2px solid var(--primaryGreenColor);
-  height: 170vh;
+  height: 100%;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.mobile-client-menu {
+  display: none;
 }
 
 .client_Side_Menu_Container {
@@ -18,5 +24,36 @@
   width: 80%;
   margin-right: 23px;
   margin-top: 50px;
-  height: 100vh;
+  margin-bottom: 3%;
+}
+
+@media (max-width: 1024px) {
+  .client_Chart_Container {
+    margin-right: 0%;
+  }
+}
+
+@media (max-width: 650px) {
+  .client_Chart_Container {
+    margin: 0 2%;
+  }
+
+  .clientDashboard {
+    gap: 0;
+    padding: 0 2%;
+  }
+
+  .clientDashboard .client_Side_Menu_Container {
+    display: none;
+  }
+
+  .client_Chart_Container {
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+
+  .mobile-client-menu {
+    display: block;
+  }
 }

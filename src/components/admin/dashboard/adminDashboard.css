@@ -21,36 +21,38 @@
 }
  */
 
-
-
-
-.adminDashboard{
-    /* background-color: #0f1535; */
-    background-color: #181c1f;
-    /* background-color: #212529; */
-    display: flex;
-    gap: 20px;
-    color : white;
-    border-top: 2px solid var(--primaryGreenColor);
+.adminDashboard {
+  /* background-color: #0f1535; */
+  background-color: #181c1f;
+  /* background-color: #212529; */
+  display: flex;
+  gap: 20px;
+  color: white;
+  border-top: 2px solid var(--primaryGreenColor);
 }
 
-.sideMenuContainer{
-    width: 20%;
-    border-right: 1px solid var(--primaryGreenColor);
-    padding: 20px;
-    background-color: #212529;
-
+.sideMenuContainer {
+  width: 20%;
+  border-right: 1px solid var(--primaryGreenColor);
+  padding: 20px;
+  background-color: #212529;
 }
 
-.adminChartContainer{
-    width: 80%;
-    margin-right: 23px;
-    margin-top: 50px;
-    height: 100vh;
+.adminChartContainer {
+  width: 80%;
+  margin-right: 23px;
+  margin-top: 50px;
+  height: 100vh;
 }
 
+.adminChartContainer .charts p {
+  color: #fff;
+}
 
+.chartBox4 p {
+  padding-top: 4%;
+}
 
-
-
-
+.chartBox5 p {
+  text-align: center;
+}

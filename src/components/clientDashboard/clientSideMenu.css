@@ -1,6 +1,9 @@
 .dropdownContainer {
   cursor: pointer;
 }
+.client_Side_Menu_Container {
+  width: 20%;
+}
 
 .clientImg {
   border-radius: 50%;
