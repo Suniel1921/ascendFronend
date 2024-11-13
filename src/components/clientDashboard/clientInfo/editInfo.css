@@ -1,25 +1,77 @@
+.editInfo {
+  margin-top: 20px;
+  height: auto;
+  margin-bottom: 5%;
+}
 
-  
-  .editInfo {
-    margin-top: 20px;
-    height: 100vh;
+.companyInfoTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+.companyInfoTable th {
+  color: black;
+}
+
+.companyInfoTable th,
+.companyInfoTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.companyInfoTable th {
+  background-color: #f4f4f4;
+  text-align: left;
+}
+
+.client-mobile-wrapper {
+  display: none;
+}
+
+.mobile-client-heading {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .client-table-wrapper {
+    overflow-x: scroll;
   }
-  
-  .companyInfoTable {
-    width: 100%;
-    border-collapse: collapse;
+
+  .client-dash-wrapper {
+    overflow-x: scroll;
   }
-  .companyInfoTable th {
-    color: black;
+}
+@media (max-width: 650px) {
+  .admin-desktop-sidebar {
+    display: none;
   }
-  
-  .companyInfoTable th, .companyInfoTable td {
-    border: 1px solid #ddd;
-    padding: 8px;
+
+  .client-dash-wrapper {
+    padding: 0 !important;
   }
-  
-  .companyInfoTable th {
-    background-color: #f4f4f4;
-    text-align: left;
+
+  .client-table-wrapper {
+    padding: 0 !important;
+    margin-top: 6%;
   }
-  
+
+  .client-mobile-wrapper {
+    display: flex;
+  }
+
+  .userDashboardHeading {
+    display: none;
+  }
+
+  .mobile-client-heading {
+    display: block;
+    color: #fff;
+    margin-top: 12%;
+    margin-left: 8%;
+  }
+  .client-table-wrapper .companyInfoTable td {
+    padding: 2px 4px;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 14px;
+  }
+}
