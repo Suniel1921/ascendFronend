@@ -1,10 +1,50 @@
-.uploadForm input{
- margin: 23px;
+.uploadForm input {
+  margin: 23px;
 }
 
+.uploadDocuments {
+  margin-top: 90px;
+  padding: 34px;
+  margin: 34px;
+}
 
-.uploadDocuments{
-    margin-top: 90px;
-    padding: 34px;
-    margin: 34px;
+.uploadButton {
+  background-color: var(--deepBlue);
+  color: #fff;
+  padding: 3% 0;
+}
+
+.uploadButton:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .admin-desc {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 650px) {
+  .uploadDocuments h3 {
+    text-align: center;
+  }
+  .clientDashboard .uploadDocuments {
+    margin: 0;
+    padding: 0;
+    margin-top: 10%;
+    width: 100%;
+    margin-bottom: 8%;
+  }
+
+  .clientDashboard .uploadForm input {
+    margin: 4% 0;
+  }
+
+  .uploadButton {
+    margin: 4% 5% 0 0;
+  }
+
+  .upload-client-wrapper {
+    margin-top: 12%;
+  }
 }

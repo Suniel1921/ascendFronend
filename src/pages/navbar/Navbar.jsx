@@ -105,8 +105,8 @@ const Navbar = () => {
               </NavLink>
             </Menu.Item>
           )}
-          <Menu.Item key="update-document">
-            <NavLink className="dropdownLink_heading" to="/update-document">
+          <Menu.Item key="upload-documents">
+            <NavLink className="dropdownLink_heading" to="/upload-documents">
               Update Document
             </NavLink>
           </Menu.Item>

@@ -4,6 +4,10 @@
   margin-bottom: 5%;
 }
 
+.dashboard-loading {
+  height: 100vh;
+}
+
 .companyInfoTable {
   width: 100%;
   border-collapse: collapse;

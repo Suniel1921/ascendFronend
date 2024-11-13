@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import { toast } from 'react-hot-toast';
-import ClientSideMenu from '../ClientSideMenu';
-import '../clientInfo/uploadDocuments.css';
+import React, { useState } from "react";
+import axios from "axios";
+import { toast } from "react-hot-toast";
+import ClientSideMenu from "../ClientSideMenu";
+import "../clientInfo/uploadDocuments.css";
+import ClientMobileMenu from "../clientInfo/ClientMobileMenu";
 
 const UploadDocuments = () => {
   const [files, setFiles] = useState([]);
-  const [name, setName] = useState('');
+  const [name, setName] = useState("");
 
   const handleFileChange = (e) => {
     setFiles(e.target.files);
@@ -20,43 +21,49 @@ const UploadDocuments = () => {
     e.preventDefault();
 
     if (!name) {
-      toast.error('Please enter a name');
+      toast.error("Please enter a name");
       return;
     }
 
     if (files.length === 0) {
-      toast.error('No files selected');
+      toast.error("No files selected");
       return;
     }
 
     // Notify user that the upload is starting
-    const toastId = toast.loading('Please wait, Documents are uploading...');
+    const toastId = toast.loading("Please wait, Documents are uploading...");
 
     // Create a FormData object
     const formData = new FormData();
-    formData.append('name', name);
+    formData.append("name", name);
     Array.from(files).forEach((file) => {
-      formData.append('images', file);
+      formData.append("images", file);
     });
 
     try {
       // Make the API call to upload files
-      const response = await axios.post(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/fileUpload/uploadDocuments`, formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-      });
+      const response = await axios.post(
+        `${
+          import.meta.env.VITE_REACT_APP_URL
+        }/api/v1/fileUpload/uploadDocuments`,
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
 
       if (response.data.success) {
         toast.success(response.data.message);
         // Clear form fields
-        setName('');
+        setName("");
         setFiles([]);
       } else {
         toast.error(`Error: ${response.data.message}`);
       }
     } catch (error) {
-      toast.error('Upload failed. Please try again.');
+      toast.error("Upload failed. Please try again.");
     } finally {
       // Remove the loading toast
       toast.dismiss(toastId);
@@ -66,8 +73,11 @@ const UploadDocuments = () => {
   return (
     <div className="uploadDocumentsContainer">
       <div className="clientDashboard">
-        <div className="client_Side_Menu_Container">
+        <div className="client_Side_Menu_Container admin-desktop-sidebar">
           <ClientSideMenu />
+        </div>
+        <div className="client-mobile-wrapper upload-client-wrapper">
+          <ClientMobileMenu />
         </div>
         <div className="uploadDocuments">
           <h3>Upload Your Documents from Here</h3>
@@ -80,13 +90,13 @@ const UploadDocuments = () => {
               className="nameInput"
             />
             {/* <label htmlFor="fileInput" className="customFileUpload"> */}
-              <input
-                id="fileInput"
-                type="file"
-                multiple
-                onChange={handleFileChange}
-                className="fileInput"
-              />
+            <input
+              id="fileInput"
+              type="file"
+              multiple
+              onChange={handleFileChange}
+              className="fileInput"
+            />
             {/* </label> */}
             <button type="submit" className="uploadButton">
               Upload Documents

@@ -39,7 +39,7 @@ const EditInfo = () => {
     getAllUserCompanyInfo();
   }, []);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className="dashboard-loading">Loading...</div>;
   if (error) return <div>Error: {error}</div>;
 
   return (
