@@ -497,6 +497,7 @@ import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import ContactsIcon from "@mui/icons-material/Contacts";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
+import MobileAdminMenu from "../../dashboard/mobileAdminMenu";
 
 const ManageOrders = () => {
   const [orders, setOrders] = useState([]);
@@ -614,8 +615,12 @@ const ManageOrders = () => {
   return (
     <div className="ManageOrdersContainer">
       <div className="adminDashboard">
-        <div className="sideMenuContainer">
+        <div className="sideMenuContainer admin-sidebar">
           <SideMenu />
+        </div>
+
+        <div className="mobile-admin-dasboard">
+          <MobileAdminMenu />
         </div>
         <div className="container">
           <h3 className="manageOrderHeading">Manage Your Customer Orders</h3>

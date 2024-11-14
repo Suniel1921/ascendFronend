@@ -100,3 +100,16 @@ button {
   color: #000 !important;
   background-color: #fff !important;
 }
+
+.adminDashboard .manageOrderHeading {
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .adminDashboard .ant-pagination {
+    justify-content: center;
+  }
+  .adminDashboard .ant-pagination li {
+    margin-left: 3%;
+  }
+}
