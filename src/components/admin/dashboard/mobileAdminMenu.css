@@ -1,0 +1,14 @@
+.cst-sidebar p,
+.cst-sidebar h3,
+.cst-sidebar svg {
+  color: #000;
+}
+
+.cst-sidebar p {
+  font-size: 16px;
+}
+
+.cst-sidebar h3 {
+  padding-left: 5%;
+  margin-top: 15%;
+}

@@ -1,58 +1,58 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import '../adminChart/adminChart.css';
-import { Line, Bar } from 'react-chartjs-2';
-import 'chart.js/auto';
-import TotalSales from './TotalSales';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import "../adminChart/adminChart.css";
+import { Line, Bar } from "react-chartjs-2";
+import "chart.js/auto";
+import TotalSales from "./TotalSales";
 
 // Static data for demonstration; replace with fetched data as needed
 const dataOrders = {
-  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
   datasets: [
     {
-      label: 'Orders',
+      label: "Orders",
       data: [65, 59, 80, 81, 56, 55, 40],
-      borderColor: '#36a2eb',
-      backgroundColor: 'rgba(54, 162, 235, 0.2)',
+      borderColor: "#36a2eb",
+      backgroundColor: "rgba(54, 162, 235, 0.2)",
       fill: true,
     },
   ],
 };
 
 const dataSales = {
-  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
   datasets: [
     {
-      label: 'Sales',
+      label: "Sales",
       data: [28, 48, 40, 19, 86, 27, 90],
-      borderColor: '#4caf50',
-      backgroundColor: 'rgba(76, 175, 80, 0.2)',
+      borderColor: "#4caf50",
+      backgroundColor: "rgba(76, 175, 80, 0.2)",
       fill: true,
     },
   ],
 };
 
 const dataVisits = {
-  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
   datasets: [
     {
-      label: 'Visits',
+      label: "Visits",
       data: [85, 72, 78, 75, 77, 75, 70],
-      borderColor: '#ff6384',
-      backgroundColor: 'rgba(255, 99, 132, 0.2)',
+      borderColor: "#ff6384",
+      backgroundColor: "rgba(255, 99, 132, 0.2)",
       fill: true,
     },
   ],
 };
 
 const dataBounceRate = {
-  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
   datasets: [
     {
-      label: 'Bounce Rate',
+      label: "Bounce Rate",
       data: [65, 59, 80, 81, 56, 55, 40],
-      borderColor: '#ff9800',
-      backgroundColor: 'rgba(255, 152, 0, 0.2)',
+      borderColor: "#ff9800",
+      backgroundColor: "rgba(255, 152, 0, 0.2)",
       fill: true,
     },
   ],
@@ -63,27 +63,28 @@ const AdminChart = () => {
 
   useEffect(() => {
     // Fetch total order count from the backend
-    axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/orders/order-count`, { withCredentials: true })
-      .then(response => {
+    axios
+      .get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/orders/order-count`, {
+        withCredentials: true,
+      })
+      .then((response) => {
         if (response.data.success) {
           setOrderCount(response.data.orderCount);
         } else {
-          console.error('Failed to fetch order count');
+          console.error("Failed to fetch order count");
         }
       })
-      .catch(error => {
-        console.error('Error fetching order count:', error);
+      .catch((error) => {
+        console.error("Error fetching order count:", error);
       });
   }, []);
-
-
 
   return (
     <div className="admin_Grid_container">
       <div className="charts chartBox1">
         <h3>Congratulations Danphe 🎉</h3>
         <p>You are the best seller of this month</p>
-        <p style={{ fontSize: '24px', fontWeight: 'bold' }}>$168.5K</p>
+        <p style={{ fontSize: "24px", fontWeight: "bold" }}>$168.5K</p>
         <p>58% of sales target</p>
         {/* <button>View Details</button> */}
       </div>
@@ -92,12 +93,12 @@ const AdminChart = () => {
         <Line data={dataOrders} />
         <p>{orderCount} orders</p>
       </div>
-      <div className="charts chartBox3">
-        {/* <h3>Total Sales</h3>
+      {/* <div className="charts chartBox3"> */}
+      {/* <h3>Total Sales</h3>
         <Line data={dataSales} />
         <p>$47.6k</p> */}
-        <TotalSales/>
-      </div>
+      <TotalSales />
+      {/* </div> */}
       <div className="charts chartBox4">
         <h3>Total Visits</h3>
         <Line data={dataVisits} />
