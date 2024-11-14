@@ -74,6 +74,9 @@
   }
   
   */
+.adminDashboard .PackageformContainer {
+  margin-top: 5%;
+}
 
 .packageForm {
   display: grid;
@@ -130,9 +133,16 @@
   .PackageformContainer {
     margin-top: 10%;
   }
+
+  .adminDashboard .PackageformContainer {
+    margin-top: 8%;
+  }
 }
 
 @media (max-width: 650px) {
+  .adminDashboard .PackageformContainer {
+    margin-top: 12%;
+  }
   .PackageformContainer .packageForm {
     display: block;
   }
