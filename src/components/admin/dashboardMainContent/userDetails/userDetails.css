@@ -1,4 +1,10 @@
-.userDetails{
-    margin-top: 56px;
-    height: 100vh;
+.userDetails {
+  margin-top: 56px;
+  height: 100vh;
+}
+
+@media (max-width: 650px) {
+  .userDetails .ant-table-container {
+    overflow: scroll;
+  }
 }
